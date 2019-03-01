@@ -6,16 +6,18 @@
 </head>
 <body style="font-family: calibri">
 	<header style="text-align: center;">
-		<h1>A place to test out what I know how to do.</h1>
-		<nav style="color: blue;">** This is the navigation pane; I don't have any links/content to put yet **</nav>
+		<h1 id="top">A place to test out what I know how to do.</h1>
+		<nav style="color: gray;">
+      <a href="#lecture1">1</a> <a href="#lecture6">6</a> <a href="#lecture7">7</a> <a href="#lecture8">8</a> <a href="#lecture9">9</a>
+      </nav>
  </header>
  <br>
  <br>
-   <u style="font-size: 24px;">Lecture 1: Pop-ups</u>
+   <u id="lecture1" style="font-size: 24px;">Lecture 1: Pop-ups</u>
    <div onclick="alert('IT WORKS');">
    When you click on this sentence, an alert will appear confirming it works.</div><!--I used <div> and not <p> because I wanted the sentence to have space between the next Lecture, but not space between the current one. -->
    <br>
-   <u style="font-size: 24px;">Lecture 6: Different headers</u>
+   <u id="lecture6" style="font-size: 24px;">Lecture 6: Different headers</u>
    <h1>h1</h1>
 	 <h2>h2</h2>
 	 <h3>h3</h3>
@@ -23,33 +25,32 @@
 	 <h5>h5</h5>
 	 <h6>h6</h6>
  
-   <u style="font-size: 24px;">Lecture 7: Lists</u>
+   <u id="lecture7" style="font-size: 24px;">Lecture 7: Lists</u>
    <br>Unordered list
    <ul>
-   		<li>Yellow</li>
-   		<li>Blue
-   			<ul>
-   				<li>Tiffany Blue</li>
-   				<li>Turquoise</li>
-   			</ul>
-   		</li>
-   		<li>Black</li>
-   		<li>Green</li>
+   	<li>Yellow</li>
+   	<li>Blue
+   		<ul>
+   			<li>Tiffany Blue</li>
+   			<li>Turquoise</li>
+   		</ul>
+   	</li>
+		<li>Black</li>
+  		<li>Green</li>
    </ul>
-
    Ordered list
    <ol>	
-   		<li>Switch on the computer.</li>
-   		<li>Log in.
-   			<ul>
-   				<li>Enter user.</li>
-   				<li>Enter password.</li>
-   			</ul>
-   		</li>
-   		<li>Open Google Chrome.</li>
+   	<li>Switch on the computer.</li>
+   	<li>Log in.
+			<ul>
+				<li>Enter user.</li>
+  				<li>Enter password.</li>
+ 			</ul>
+		</li>
+		<li>Open Google Chrome.</li>
    </ol>
    
-   <u style="font-size: 24px;"> Lecture 8: Character Entity References</u>
+   <u id="lecture8" style="font-size: 24px;"> Lecture 8: Character Entity References</u>
    <div style="font-size: 12px"> (Note: For some reason, I don't need to add a semi-colon for some Entities to show, that why I have enclosed the words in brackets)
    </div>
    <br><div>There are 3 characters that should always be escaped. They are (&lt;), (&gt;) and (&amp;).
@@ -61,16 +62,23 @@
    </p>
    You can also stop text wrapping when a window is made smaller by using &[nbsp]. I've typed a long sentence so that I can show how to prevent broken words. The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs.
 
-   Lecture 9: Creating Links
-   Internal links are links to a file in the same directory as the file that is being edited. Like this.
-      If you want the link to be on a different line, you can surround the text in div tags.
-      Like this link.
-   External links are links to a file that is not in the same directory. Like this.
-   Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture.
- <br>
- <br>
+   <p><u id="lecture9" style="font-size: 24px;">Lecture 9: Creating Links</u>
+      <br>Internal links are links to a file in the same directory as the file that is being edited. <a href="blank.html" title="Blank Page">Like this.</a>
+      <div>If you want the link to be on a different line, you can surround the text in div tags.
+      <a href="blank.html" title="Blank Page">
+       <div>Like this link.</div>
+      </a>
+      </div>
+      <p>External links are links to a file that is not in the same directory. <a href="https://git-scm.com/docs" target="_blank" title="Git References">Like this.</a>
+      </p>
+      Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture.
+<br>
+<br>
+ <p>
+   <a style="font-size: 12px;" href="#top" title="Back to Top">Back to Top</a>
+ </p>
 	<footer style="text-align: right; font-size: 10px;">
-		Lecture 8: 28/02/2019
+		Lecture 9: 01/03/2019
 	</footer>
 </body>
 </html>
