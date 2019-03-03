@@ -6,19 +6,28 @@
 </head>
 <body style="font-family: calibri">
 	<header style="text-align: center;">
-		<h1 id="top">A place to test out what I know how to do.</h1>
+		<h1 id="top">Testing page</h1>
 		<nav style="color: gray;">
       <a href="#lecture1">1</a> <a href="#lecture6">6</a> <a href="#lecture7">7</a> <a href="#lecture8">8</a> <a href="#lecture9">9</a> <a href="#lecture10">10</a>
       </nav>
  </header>
+ <style>
+
+    #lecture1, #lecture6, #lecture7, #lecture8, #lecture9, #lecture10 {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+ </style>
  <br>
  <br>
  <section>
-   <div id="lecture1" style="font-size: 24px;">Lecture 1: Pop-ups</div>
+   <div id= "lecture1">Lecture 1: Pop-ups</div>
    <div onclick="alert('IT WORKS');">
    When you click on this sentence, an alert will appear confirming it works.</div><!--I used <div> and not <p> because I wanted the sentence to have space between the next Lecture, but not space between the current one. -->
    <br>
-   <div id="lecture6" style="font-size: 24px;">Lecture 6: Different headers</div>
+   <div id="lecture6">Lecture 6: Different headers</div>
    <h1>h1</h1>
 	<h2>h2</h2>
 	<h3>h3</h3>
@@ -27,7 +36,7 @@
 	<h6>h6</h6>
  </section>
  <section>
-   <div id="lecture7" style="font-size: 24px;">Lecture 7: Lists</div>
+   <div id="lecture7">Lecture 7: Lists</div>
    <br>Unordered list
    <ul>
    	<li>Yellow</li>
@@ -53,7 +62,7 @@
    </ol>
  </section>
  <section>
-   <div id="lecture8" style="font-size: 24px;"> Lecture 8: Character Entity References</div>
+   <div id="lecture8"> Lecture 8: Character Entity References</div>
    <div style="font-size: 12px"> (Note: For some reason, I don't need to add a semi-colon for some Entities to show, that why I have enclosed the words in brackets)
    </div>
    <br><div>There are 3 characters that should always be escaped. They are (&lt;), (&gt;) and (&amp;).
@@ -67,7 +76,7 @@
  </section>
  <section>
    <p>
-      <div id="lecture9" style="font-size: 24px;">Lecture 9: Creating Links</div>
+      <div id="lecture9">Lecture 9: Creating Links</div>
       Internal links are links to a file in the same directory as the file that is being edited. <a href="blank.html" title="Blank Page">Like this.</a>
       <div>If you want the link to be on a different line, you can surround the text in div tags.
       <a href="blank.html" title="Blank Page">
@@ -79,7 +88,7 @@
       Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture.
  </section>
  <section>
-      <br><div id="lecture10" style="font-size: 24px;">Lecture 10: Displaying Images</div>
+      <br><div id="lecture10">Lecture 10: Displaying Images</div>
       To display an image you use the img tag. It's an inline tag, so if you want the image on it's own line you need to contain the image in a blockline tag.
       <div>
       <img src="puppy.jpg" width="640" height="400" alt="A puppy"> Here's a picture of a puppy.
