@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Testing page: Front-end</title>
+</head>
+<body style="font-family: calibri">
+	<header style="text-align: center;">
+		<h1 id="top">A place to test out what I know how to do.</h1>
+		<nav style="color: gray;">
+      <a href="#lecture1">1</a> <a href="#lecture6">6</a> <a href="#lecture7">7</a> <a href="#lecture8">8</a> <a href="#lecture9">9</a> <a href="#lecture10">10</a>
+      </nav>
+ </header>
+ <br>
+ <br>
+ <section>
+   <div id="lecture1" style="font-size: 24px;">Lecture 1: Pop-ups</div>
+   <div onclick="alert('IT WORKS');">
+   When you click on this sentence, an alert will appear confirming it works.</div><!--I used <div> and not <p> because I wanted the sentence to have space between the next Lecture, but not space between the current one. -->
+   <br>
+   <div id="lecture6" style="font-size: 24px;">Lecture 6: Different headers</div>
+   <h1>h1</h1>
+	<h2>h2</h2>
+	<h3>h3</h3>
+	<h4>h4</h4>
+	<h5>h5</h5>
+	<h6>h6</h6>
+ </section>
+ <section>
+   <div id="lecture7" style="font-size: 24px;">Lecture 7: Lists</div>
+   <br>Unordered list
+   <ul>
+   	<li>Yellow</li>
+   	<li>Blue
+   		<ul>
+   			<li>Tiffany Blue</li>
+   			<li>Turquoise</li>
+   		</ul>
+   	</li>
+		<li>Black</li>
+  		<li>Green</li>
+   </ul>
+   Ordered list
+   <ol>	
+   	<li>Switch on the computer.</li>
+   	<li>Log in.
+			<ul>
+				<li>Enter user.</li>
+  				<li>Enter password.</li>
+ 			</ul>
+		</li>
+		<li>Open Google Chrome.</li>
+   </ol>
+ </section>
+ <section>
+   <div id="lecture8" style="font-size: 24px;"> Lecture 8: Character Entity References</div>
+   <div style="font-size: 12px"> (Note: For some reason, I don't need to add a semi-colon for some Entities to show, that why I have enclosed the words in brackets)
+   </div>
+   <br><div>There are 3 characters that should always be escaped. They are (&lt;), (&gt;) and (&amp;).
+   </div>
+   To show these as text you must type in &amp;lt, &amp;gt, &amp;amp respectively but they must be followed by a semi-colon.<!--I didn't type the semi-colon itself because it will turn into the entity.-->
+   <p>Other example of Entity References:
+    <span style="margin-left: 30px;"><br>(&copy;): &[copy] <span style="margin-left: 40px;">(&quot;): &[quot]</span>
+   </span>
+   </p>
+   You can also stop text wrapping when a window is made smaller by using &[nbsp]. I've typed a long sentence so that I can show how to prevent broken words. The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs.
+ </section>
+ <section>
+   <p>
+      <div id="lecture9" style="font-size: 24px;">Lecture 9: Creating Links</div>
+      Internal links are links to a file in the same directory as the file that is being edited. <a href="blank.html" title="Blank Page">Like this.</a>
+      <div>If you want the link to be on a different line, you can surround the text in div tags.
+      <a href="blank.html" title="Blank Page">
+       <div>Like this link.</div>
+      </a>
+      </div>
+      <p>External links are links to a file that is not in the same directory. <a href="https://git-scm.com/docs" target="_blank" title="Git References">Like this.</a>
+   </p>
+      Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture.
+ </section>
+ <section>
+      <br><div id="lecture10" style="font-size: 24px;">Lecture 10: Displaying Images</div>
+      To display an image you use the img tag. It's an inline tag, so if you want the image on it's own line you need to contain the image in a blockline tag.
+      <div>
+      <img src="puppy.jpg" width="640" height="400" alt="A puppy"> Here's a picture of a puppy.
+      </div>
+ </section>
+<br>
+<br>
+ <p>
+   <a style="font-size: 12px;" href="#top" title="Back to Top">Back to Top</a>
+ </p>
+	<footer style="text-align: right; font-size: 10px;">
+		Lecture 10: 01/03/2019
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
