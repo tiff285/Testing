@@ -4,38 +4,36 @@
 	<meta charset="utf-8">
 	<title>Testing page: Front-end</title>
    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-   <style>
-
-    #lecture1, #lecture6, #lecture7, #lecture8, #lecture9, #lecture10 {
-      font-size: 24px;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
-    .notes  {
-      font-size: 12px;
-      color: gray;
-    }
-
- </style>
 </head>
-<body style="font-family: calibri">
-
-	<header style="text-align: center;">
-		<h1 id="top">Testing page</h1>
-		<nav style="color: gray;">
-      <a href="#lecture1">1</a> <a href="#lecture6">6</a> <a href="#lecture7">7</a> <a href="#lecture8">8</a> <a href="#lecture9">9</a> <a href="#lecture10">10</a>
+<body>
+	<header> <!-- When I learn how to, I will make the navigation bar a drop down menu, so it takes up less space on the page. -->
+		<h1 id=top>Testing page</h1>
+		<nav>
+      <li><a href="#lecture1">Lecture 1: Pop-ups</a></li>
+      <li><a href="#lecture6">Lecture 6: Different headers</a></li>
+      <li><a href="#lecture7">Lecture 7: Lists</a></li>
+      <li><a href="#lecture8">Lecture 8: Character Entity References</a></li>
+      <li><a href="#lecture9">Lecture 9: Creating Links</a></li>
+      <li><a href="#lecture10">Lecture 10: Displaying Images</a></li>
+      <li><a href="#lecture13">Lectures 13 & 14: Element, Class and ID Selectors</a></li>
+      <li><a href="#lecture15">Lecture 15: Pseudo-class Selectors</a></li>
+      <li><a href="#lecture16"> Lecture 16 & 18: Style Placement & Styling Text</a></li>
+      <li><a href="lecture17">Lecture 17: Conflict Resolution</a></li>
       </nav>
  </header>
 
  <br>
  <br>
  <section>
-   <div id= "lecture1">Lecture 1: Pop-ups</div>
+   <div id=lecture1>Lecture 1: Pop-ups</div>
    <div onclick="alert('IT WORKS');">
    When you click on this sentence, an alert will appear confirming it works.</div>
-   <br>
-   <div id="lecture6">Lecture 6: Different headers</div>
+
+</section>
+
+<section>
+   <div id=lecture6>Lecture 6: Different headers</div>
+   <div class="notes">When the h1 and h2 tag are siblings of the same tag, they are the same size.</div>
    <h1>h1</h1>
 	<h2>h2</h2>
 	<h3>h3</h3>
@@ -45,8 +43,8 @@
  </section>
 
  <section>
-   <div id="lecture7">Lecture 7: Lists</div>
-   <br>Unordered list
+   <div id=lecture7>Lecture 7: Lists</div>
+   Unordered list: use the 'ul' tag.
    <ul>
    	<li>Yellow</li>
    	<li>Blue
@@ -58,7 +56,7 @@
 		<li>Black</li>
   		<li>Green</li>
    </ul>
-   Ordered list
+   Ordered list: use the 'ol' tag.
    <ol>	
    	<li>Switch on the computer.</li>
    	<li>Log in.
@@ -72,68 +70,88 @@
  </section>
 
  <section>
-   <div id="lecture8"> Lecture 8: Character Entity References</div>
+   <div id=lecture8>Lecture 8: Character Entity References</div>
    <div class="notes"> Note: For some reason, I don't need to add a semi-colon for some Entities to show, that why I have enclosed the words in brackets
    </div>
-   <br><div>There are 3 characters that should always be escaped. They are (&lt;), (&gt;) and (&amp;).
-   </div>
-   To show these as text you must type in &amp;lt, &amp;gt, &amp;amp respectively but they must be followed by a semi-colon.<!--I didn't type the semi-colon itself because it will turn into the entity.-->
+   <p>There are 3 characters that should always be escaped. They are (&lt;), (&gt;) and (&amp;).
+   </p>
+   To show these as text you must type in <img src="lessthan.png" width="40" height="18" alt="Less than">, <img src="greaterthan.png" width="40" height="18" alt="Greater than">, <img src="ampersand.png" width="43" height="18" alt="Ampersand"> respectively.<!--I didn't type the semi-colon itself because it will turn into the entity.-->
    <p>Other example of Entity References:
-    <span style="margin-left: 30px;"><br>(&copy;): &[copy] <span style="margin-left: 40px;">(&quot;): &[quot]</span>
+    <span class="examples"><br>(&copy;): <img src="copyright.png" width="50" height="18" alt="Copyright"><span class="examples">(&quot;): <img src="quotes.png" width="45" height="18" alt="Quotes"></span>
    </span>
    </p>
-   You can also stop text wrapping when a window is made smaller by using &[nbsp]. I've typed a long sentence so that I can show how to prevent broken words. The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs.
+   You can also stop text wrapping when a window is made smaller by using <img src="nobreakspace.png" width="50" height="18" alt="No break space">. I've typed a long sentence so that I can show how to prevent broken words. <br>The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs.
  </section>
 
  <section>
-   <p>
-      <div id="lecture9">Lecture 9: Creating Links</div>
-      Internal links are links to a file in the same directory as the file that is being edited. <a href="blank.html" title="Blank Page">Like this.</a>
+      <div id=lecture9>Lecture 9: Creating Links</div>
+      Internal links are links to a file in the same directory as the file that is being edited. <a href="blank.html" target="_blank" title="Blank Page">Like this.</a>
       <div>If you want the link to be on a different line, you can surround the text in div tags.
-      <a href="blank.html" title="Blank Page">
-       <div>Like this link.</div>
+      <a href="blank.html" target="_blank" title="Blank Page">
+       <div>Like this.</div>
       </a>
       </div>
-      <p>External links are links to a file that is not in the same directory. <a href="https://git-scm.com/docs" target="_blank" title="Git References">Like this.</a>
-   </p>
+      <p>
+      External links are links to a file that is not in the same directory. <a href="https://git-scm.com/docs" target="_blank" title="Git References">Like this.</a>
+      </p>
       Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture.
  </section>
 
  <section>
-      <br><div id="lecture10">Lecture 10: Displaying Images</div>
-      To display an image you use the img tag. It's an inline tag, so if you want the image on it's own line you need to contain the image in a blockline tag.
+      <div id=lecture10>Lecture 10: Displaying Images</div>
+      To display an image you use the 'img' tag.
+      <br>It's an inline tag, so if you want the image on it's own line you need to contain the image in a blockline tag.
       <div>
-      <img src="puppy.jpg" width="640" height="400" alt="A puppy"> Here's a picture of a puppy.
+      <img src="puppy.jpg" width="320" height="200" alt="A puppy"> Here's a picture of a puppy.
       </div>
  </section>
+ 
  <section>
-    Lectures 12~15: CSS
-    Element, class and ID selectors.
+    <div id=lecture13>Lectures 13 & 14: Element, Class and ID Selectors</div>
+    You can style an element by simply writing the name of the element and then write the styles you want in a pair of braces.<img src="element.png" width="45" height="18" alt="Element">
+    <p>You can style a class by writing a fullstop, the name of the class with no spaces and then write the styles you want in a pair of braces.<img src="class.png" width="50" height="18" alt="Class">
+    </p>
+    <div>You can style an ID by writing a pound sign, the name of the ID with no spaces and then write the styles you want in a pair of braces.<img src="ID.png" width="80" height="18" alt="ID"></div>
+    <p><div>I have shown the use of using selectors to style my webpage in the stylesheet. For example I gave made all the text on this page Trebuchet MS.</div>
+       <img src="bodyfont.png" width="370" height="70" alt="Body font">  
+    </p>
+    <div>You can style several selectors in the same way by separating them with commas. </div>
+       <img src="multipleselectors.png" width="150" height="60" alt="Multiple selectors"> 
+    <p>Selectors can also be combined, they don't have to be used individually.</>
+    I have actually combined selectors myself by using <img src="nthchild.png" width="180" height="18" alt="nth-child selector"> in my stylesheet. 
+    <br>This helps me style every lecture title the way I want to because it is alwys the 1st div in every section that I have created.
+ </section>
 
-    Selectors can be combined, they don't have to be used individually.
+ <section>
+    <div id=lecture15>Lecture 15: Pseudo-class Selectors</div>
+    <div>There are also pseudo-class selectors which work based on the way the user interacts with the webpage. To use one, you 
+    </div>
 
-    There are also pseudo-clas selectors which work based on the way the user interacts with the webpage.
+ </section>
+
+ <section>
+    <div id=lecture16>Lecture 16 & 18: Style Placement & Styling Text</div>
+    
+ </section>
+
+ <section>
+    <div id=lecture17>Lecture 17: Conflict Resolution</div>
+    
  </section>
 <br>
 <br>
  <p>
-   <a style="font-size: 12px;" href="#top" title="Back to Top">Back to Top</a>
+   <a id=backtotop href="#top" title="Back to Top">Back to Top</a>
  </p>
-	<footer style="text-align: right; font-size: 10px;">
-		Lecture 13: 03/03/2019
+	<footer id=lecturestatus>
+		Lecture 17: 06/03/2019, <br>but have not written about it <br>specifically on this page.
 	</footer>
 </body>
 </html>
 
 
 
-
-
-
-
-
-
-
+   
 
 
 
