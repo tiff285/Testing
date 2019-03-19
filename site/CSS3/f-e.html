@@ -68,6 +68,8 @@
 		</li>
 		<li>Open Google Chrome.</li>
    </ol>
+
+   You can remove the bullet points of numbers from lists by adding attributes to the tag itself, or to the stylesheet. I have done so in the navigation bar where there are links to areas of the page. It is actually a list, but because I have removed the bullet points, you can't tell the difference.
  </section>
 
  <section>
@@ -101,7 +103,11 @@
  <section>
       <div id=lecture10>Lecture 10: Displaying Images</div>
       To display an image you use the 'img' tag.
-      <br>It's an inline tag, so if you want the image on it's own line you need to contain the image in a blockline tag.
+      <div>
+        <img src="puppyimg.png" width="472" height="56" alt="Image Tag example">
+      </div>
+      <p>It's an inline tag so as shown above, if you want the image on it's own line you need to contain the image in a blockline tag. I have used 'div' tags as my blockline tags. Below you will see that the text 'Here's a picture of a puppy.' are right next to the image on the same line, and this is proof of the 'img' tag being an inline one.
+        </p>
       <div>
       <img src="puppy.jpg" width="320" height="200" alt="A puppy"> Here's a picture of a puppy.
       </div>
@@ -124,22 +130,38 @@
       ALSO I HAVE TO EDIT FROM HERE DOWNWARDS-->
       <span></span>
       <div><span>Element with a class selector</span>
-        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text. <img src="elementwithclassselector.png" width="182" height="56" alt="Element with Class Selector">Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text.
+        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, 
+        <br>An example is shown below:
+        <br><img src="elementwithclassselector.png" width="182" height="56" alt="Element with Class Selector">
+        <br>This means that
       </div>
       <div><span>Direct child selector</span>
-        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text. <img src="directchildselector.png" width="142" height="56" alt="Direct Child Selector">Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text.
+        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, 
+        <br>An example is shown below:
+        <br><img src="directchildselector.png" width="142" height="56" alt="Direct Child Selector">
+        <br>This means that
       </div>
       <div><span>Descendant selector</span>
-        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text. <img src="descendantselector.png" width="170" height="56" alt="Descendant Selector">Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text.
+        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, 
+        <br>An example is shown below:
+        <br><img src="descendantselector.png" width="170" height="56" alt="Descendant Selector">
+        <br>This means that
       </div>
       <div><span>Adjacent sibling selector</span>
-        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text. <img src="adjacentsiblingselector.png" width="222" height="56" alt="Adjacent Sibling Selector">Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text.
+        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, 
+        <br>An example is shown below:
+        <br><img src="adjacentsiblingselector.png" width="222" height="56" alt="Adjacent Sibling Selector">
+        <br>This means that
       </div>
       <div><span>General sibling selector</span>
-        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text. <img src="generalsiblingselector.png" width="240" height="54" alt="General Sibling Selector">Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text. Example text, example text, example text, example text, example text.
+        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, 
+        <br>An example is shown below:
+        <br><img src="generalsiblingselector.png" width="240" height="54" alt="General Sibling Selector">
+        <br>This means that
       </div>
-      <article class=clear>All of this can be applies to different selectors and can be mixed. It doesn't have to be with element to element only.</article>
     </section>
+    <p class=clear>All of this can be applied to different selectors and can be mixed. It doesn't have to be with element to element only.
+    </p>
     I have actually combined selectors myself by using <img src="nthchild.png" width="180" height="18" alt="nth-child selector"> in my stylesheet.
     <div>This helps me style every lecture title the way I want to because it is alwys the 1st div in every section that I have created.</div>
  </section>
@@ -148,21 +170,30 @@
     <div id=lecture15>Lecture 15: Pseudo-class Selectors</div>
     <div>There are also pseudo-class selectors which work based on the way the user interacts with the webpage. The pseudo-class refers to the current state of particlar content. To use one, you add a semi-colon after the selector and then the pseudo-class. Here are examples of a few:
     <div><img src="pseudoclassselector.png" width="300" height="54" alt="Pseudo-class selector"></div>
-    The ':link' one is a link in its natural state before it has been clicked on. ':visited' is a link that has been clicked on before. ':hover' is a link that is being hovered on. ':active' is a link that is being clicked on. ':nth&nbsp;-&nbsp;child(1~/odd/even)' is a particular child within the selector chosen. You can have any number child, or you coud put every even or odd child.
-
+    <p>The ':link' one is a link in its natural state before it has been clicked on. ':visited' is a link that has been clicked on before. ':hover' is a link that is being hovered on. ':active' is a link that is being clicked on. ':nth&nbsp;-&nbsp;child(1~/odd/even)' is a particular child within the selector chosen. You can have any number child, or you coud put every even or odd child.
+    </p>
     </div>
 
  </section>
 
  <section>
     <div id=lecture16>Lecture 16 & 18: Style Placement & Styling Text</div>
-    
+    <div>
+      You can style text directly inside the necessary html, but it is more common practice to use a css stylesheet and then provide a link to it in the html.
+      <div>
+        <img src="linkingstylesheet.png" width="272" height="21" alt="Link to stylesheet">
+      </div> 
+      <p>Remember that styling attributes work in a chronological order. So the lower it is in the html, the higher precedent it takes. (This is obviously disregarding the rule of specificity.) This is why you place the link to the stylesheet inside the head area, as this means you have virtually added all your styles there.
+      </p>
+    </div>
  </section>
 
  <section>
     <div id=lecture17>Lecture 17: Conflict Resolution</div>
-    
  </section>
+
+
+
 <br>
 <br>
  <p>
