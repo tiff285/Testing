@@ -130,34 +130,39 @@
       ALSO I HAVE TO EDIT FROM HERE DOWNWARDS-->
       <span></span>
       <div><span>Element with a class selector</span>
-        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, 
-        <br>An example is shown below:
+        <br>To do this, you simply type in the name of the element followed by a fullstop and then name of the class without spaces in between. 
+        <p>An example is shown below:
         <br><img src="elementwithclassselector.png" width="182" height="56" alt="Element with Class Selector">
-        <br>This means that
+        <br>This means that every 'span' element that is classed as examples will have a 40px left margin.
+        </p>
       </div>
       <div><span>Direct child selector</span>
-        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, 
-        <br>An example is shown below:
+        <br>The direct child inside the parent will be affected. Not all descendants, just the ones that are directly inside the parent. 
+        <p>An example is shown below:
         <br><img src="directchildselector.png" width="142" height="56" alt="Direct Child Selector">
-        <br>This means that
+        <br>This means that every 'p' element that is a direct child of an article will be blue. A 'p' tag within a 'div' tag that is within an 'article' tag, will not be affected.
+        </p>
       </div>
       <div><span>Descendant selector</span>
-        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, 
-        <br>An example is shown below:
+        <br>Is the exact same as the direct child selector, except for the fact that it also includes any of the tags that are also not direct child.
+        <p>An example is shown below:
         <br><img src="descendantselector.png" width="170" height="56" alt="Descendant Selector">
-        <br>This means that
+        <br>This means that any 'p' elements that are within the 'article' element will have the font size of 24px.
+        </p>
       </div>
       <div><span>Adjacent sibling selector</span>
-        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, 
-        <br>An example is shown below:
+        <br>This is used to affect selectors that are next to each other. You use the '+' to connect selectors.
+        <p>An example is shown below:
         <br><img src="adjacentsiblingselector.png" width="222" height="56" alt="Adjacent Sibling Selector">
-        <br>This means that
+        <br>This means that any 'p' tag that directly follows a 'p' tag will have a yellow backfground. The first p itself is not affected.
+        </p>
       </div>
       <div><span>General sibling selector</span>
-        <br>Example text, example text, example text, example text, example text. Example text, example text, example text, 
-        <br>An example is shown below:
-        <br><img src="generalsiblingselector.png" width="240" height="54" alt="General Sibling Selector">
-        <br>This means that
+        <br>To do this, you use the '~' to connect selectors. This means that all the siblings within the same parent will have certain attributes.
+        <p>An example is shown below:
+        <br><img src="generalsiblingselector.png" width="248" height="64" alt="General Sibling Selector">
+        <br>This means that any 'p' elements with the same parent 'div' element will be underlined.
+        </p>
       </div>
     </section>
     <p class=clear>All of this can be applied to different selectors and can be mixed. It doesn't have to be with element to element only.
