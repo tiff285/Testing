@@ -2,6 +2,8 @@ body	{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	background-color: #bcd7d2;
 	box-sizing: border-box;
+	width: 1200px;
+	margin: auto;
 }
 
 header	{	
@@ -71,7 +73,15 @@ span.examples	{
 	margin-left: 40px;
 }
 
-/*STILL TO BE EDITED*/
+.floatleft	{
+	float: left;
+}
+
+.floatleft+.floatleft	{
+	float: left;
+	margin-left: 50px;
+}
+
 .combiningselectors > div	{
 	float: left;
 	font-size: 100%;
