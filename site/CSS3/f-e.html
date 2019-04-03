@@ -48,9 +48,10 @@
 	 <h4 class="floatleft">h4</h4>
 	 <h5 class="floatleft">h5</h5>
 	 <h6 class="floatleft">h6</h6>
+   <div class="clearleft"></div>
  </section>
 
- <section class="clearleft">
+ <section>
    <div id=lecture7>Lecture 7: Lists</div>
    <article class="floatleft">
    Unordered list: use the 'ul' tag.
@@ -127,7 +128,7 @@
  </section>
  
  <section>
-    <div id=lecture13>Lectures 13 & 14: Element, class and ID selectors</div>
+    <div id=lecture13>Lectures 13 & 14: Element, class and ID selectors</div> <!-- In this section I will change it to the media queries, twitter bootstrap scale.-->
     You can style an element by simply writing the name of the element and then write the styles you want in a pair of braces.<img src="element.png" width="45" height="18" alt="Element">
     <p>You can style a class by writing a fullstop, the name of the class with no spaces and then write the styles you want in a pair of braces.<img src="class.png" width="50" height="18" alt="Class">
     </p>
@@ -197,19 +198,44 @@
     <div id=lecture16>Lecture 16 & 18: Style placement & styling text</div>
     <div>
       You can style text directly inside the necessary html, but it is more common practice to use a css stylesheet and then provide a link to it in the html. Putting styling in the head tag of the actual html being edited will override the stylesheet, but it is not good practice.
+    </div>
+    <div><img src="linkingstylesheet.png" width="272" height="21" alt="Link to stylesheet"></div> 
+    <p>Remember that styling attributes work in a chronological order. So the lower it is in the html, the higher precedent it takes. (This obviously disregarding the rule of specificity.) This is why you place the link to the stylesheet inside the head area, as this means you have virtually added all your styles there.
+    </p>
+    <div>There are many ways to style text. Here are few examples:</div> <!--Make this two columns. The examples of styling text will be one column, and the other side will be explanations. I also want to style the html as courier new, and maybe add extra line spancing.-->
     <div>
-        <img src="linkingstylesheet.png" width="272" height="21" alt="Link to stylesheet">
-      </div> 
-      <p>Remember that styling attributes work in a chronological order. So the lower it is in the html, the higher precedent it takes. (This obviously disregarding the rule of specificity.) This is why you place the link to the stylesheet inside the head area, as this means you have virtually added all your styles there.
-      </p>
+      <div class="html">
+        <div>font-family: [font]</div>
+        <div>color: [colour]</div>
+        <div>font-style: [normal, italic, oblique, initial, inherit]</div>
+        <div>font-weight: [100~900, initial, inherit]</div>
+        <div>font-size: [*px, *%, 0.*1~em]</div>
+        <div>text-transform: [captials, lowercase, all capitals]</div>
+        <div>text-align: [center, left, right]</div>
+      </div>
+      <br>
+      <div class=" row smallerfont">
+        <div class="col-lg-6 col-md-12 col-sm-12">'font-family' - You simply put in a few font's that you would like the browser to display. You can type multiple, just incase the browser that is being used doesn't support a particular one.</div>
+        <div class="col-lg-6 col-md-12 col-sm-12">'color' - You put the color that you want. You can type the name of the color, but it is best to you the hex code.</div>
+        <div class="col-lg-6 col-md-12 col-sm-12">'font-style' - Type the style. 'initial' means that it will retain the default style. 'inherit' means that it will take the style of the parent tag.</div>
+        <div class="col-lg-6 col-md-12 col-sm-12">'font-weight' - 400 is the same as bold, any numbers entered that are lower or higher will be thinner and thicker respectively. You can also use 'initial' and 'inherit' here.</div>
+        <div class="col-lg-6 col-md-12 col-sm-12">'font-size' - You can use pixels, percentage or em. 'em' is the scaled number to the default font size. If you put 0.5em and the default font size is 12px, it will then become 6px.</div>
+        <div class="col-lg-6 col-md-12 col-sm-12">'text-transform' - Pretty self-explanatory.</div>
+        <div class="col-lg-6 col-md-12 col-sm-12">'text-align' - Again self-explanatory.</div>
+        <div class="clearleft"></div>
+      </div>
+    </div>
  </section>
 <!--FROM HERE DOWNWARDS HAS NOT BEEN STYLED
 
       ----------------------------------------------------------------------------------------------------------------
       ----------------------------------------------------------------------------------------------------------------
       --------------------------------------------------------------------------------------------------------------->
- <section>
+
+ <section> <!--Need to figure out why there is not a 60px space between this and the above section-->
     <div id=lecture17>Lecture 17: Conflict resolution</div>
+    When two or more styles have been given to a particular element, class or ID, there needs to be a way to tell which style will take precedence. There are several ways to do this. The three ways that I know about are 'Origin precedence', 'Inheritance' and 'Specificity'.
+    <!-- I would like to create three columns here for a large screen, and one for medium screens -->
  </section>
 
  <section>
