@@ -78,11 +78,11 @@ span.examples	{
 
 .floatleft	{
 	float: left;
+	margin-left: 50px;
 }
 
-.floatleft+.floatleft	{
-	float: left;
-	margin-left: 50px;
+.floatright	{
+	float: right;
 }
 
 .combiningselectors > div	{
@@ -104,8 +104,12 @@ span.examples	{
 text-decoration: underline;
 }
 
-.clear	{
+.clearleft	{
 	clear: left;
+}
+
+.clearright	{
+	clear: right;
 }
 
 #backtotop {
@@ -116,6 +120,7 @@ text-decoration: underline;
 	border: 1px solid #545454;
 	display: inline-block;
 	width: 70px;
+	text-align: center;
 }
 
 #backtotop:hover	{
@@ -125,6 +130,7 @@ text-decoration: underline;
 	border: 1px solid #808080;
 	display: inline-block;
 	width: 70px;
+	text-align: center;
 }
 
 #lecturestatus	{

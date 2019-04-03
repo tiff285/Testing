@@ -12,13 +12,20 @@
       <li><a href="#lecture1">Lecture 1: Pop-ups</a></li>
       <li><a href="#lecture6">Lecture 6: Different headers</a></li>
       <li><a href="#lecture7">Lecture 7: Lists</a></li>
-      <li><a href="#lecture8">Lecture 8: Character Entity References</a></li>
-      <li><a href="#lecture9">Lecture 9: Creating Links</a></li>
-      <li><a href="#lecture10">Lecture 10: Displaying Images</a></li>
-      <li><a href="#lecture13">Lectures 13 & 14: Element, Class and ID Selectors</a></li>
-      <li><a href="#lecture15">Lecture 15: Pseudo-class Selectors</a></li>
-      <li><a href="#lecture16"> Lecture 16 & 18: Style Placement & Styling Text</a></li>
-      <li><a href="lecture17">Lecture 17: Conflict Resolution</a></li>
+      <li><a href="#lecture8">Lecture 8: Character entity references</a></li>
+      <li><a href="#lecture9">Lecture 9: Creating links</a></li>
+      <li><a href="#lecture10">Lecture 10: Displaying images</a></li>
+      <li><a href="#lecture13">Lectures 13 & 14: Element, class and ID selectors</a></li>
+      <li><a href="#lecture15">Lecture 15: Pseudo-class selectors</a></li>
+      <li><a href="#lecture16">Lecture 16 & 18: Style placement & styling text</a></li>
+      <li><a href="#lecture17">Lecture 17: Conflict resolution</a></li>
+      <li><a href="#lecture19">Lecture 19: The box model</a></li>
+      <li><a href="#lecture20">Lecture 20: The background property</a></li>
+      <li><a href="#lecture21">Lecture 21: Floating</a></li>
+      <li><a href="#lecture22">Lecture 22: Relative and absolute positioning</a></li>
+      <li><a href="#lecture23">Lecture 23: Media queries<a></li>
+      <li><a href="#lecture24">Lecture 24: Responsive design</a></li>
+      <li><a href="#lecture25">Lecture 25: Twitter Bootstrap</a></li>      
     </nav>
  </header>
 
@@ -43,7 +50,7 @@
 	 <h6 class="floatleft">h6</h6>
  </section>
 
- <section class="clear">
+ <section class="clearleft">
    <div id=lecture7>Lecture 7: Lists</div>
    <article class="floatleft">
    Unordered list: use the 'ul' tag.
@@ -74,13 +81,13 @@
 		<li>Open Google Chrome.</li>
    </ol>
    </article>
-   <div class="clear">You can remove the bullet points of numbers from lists by adding attributes to the tag itself, or to the stylesheet. I have done so in the navigation bar where there are links to areas of the page. It is actually a list, but because I have removed the bullet points, you can't tell the difference.
+   <div class="clearleft">You can remove the bullet points of numbers from lists by adding attributes to the tag itself, or to the stylesheet. I have done so in the navigation bar where there are links to areas of the page. It is actually a list, but because I have removed the bullet points, you can't tell the difference.
    </div>
  </section>
 
  <section>
-   <div id=lecture8>Lecture 8: Character Entity References</div>
-   <div class="notes"> Note: For some reason, I don't need to add a semi-colon for some Entities to show, that why I have enclosed the words in brackets
+   <div id=lecture8>Lecture 8: Character entity references</div>
+   <div class="notes"> Note: For some reason, I don't need to add a semi-colon for some entities to show, that why I have enclosed the words in brackets
    </div>
    <p>There are 3 characters that should always be escaped. They are (&lt;), (&gt;) and (&amp;).
    </p>
@@ -93,7 +100,7 @@
  </section>
 
  <section>
-      <div id=lecture9>Lecture 9: Creating Links</div>
+      <div id=lecture9>Lecture 9: Creating links</div>
       Internal links are links to a file in the same directory as the file that is being edited. <a href="blank.html" target="_blank" title="Blank Page">Like this.</a>
       <div>If you want the link to be on a different line, you can surround the text in div tags.
       <a href="blank.html" target="_blank" title="Blank Page">
@@ -107,7 +114,7 @@
  </section>
 
  <section>
-      <div id=lecture10>Lecture 10: Displaying Images</div>
+      <div id=lecture10>Lecture 10: Displaying images</div>
       To display an image you use the 'img' tag.
       <div>
         <img src="puppyimg.png" width="472" height="56" alt="Image Tag example">
@@ -120,7 +127,7 @@
  </section>
  
  <section>
-    <div id=lecture13>Lectures 13 & 14: Element, Class and ID Selectors</div>
+    <div id=lecture13>Lectures 13 & 14: Element, class and ID selectors</div>
     You can style an element by simply writing the name of the element and then write the styles you want in a pair of braces.<img src="element.png" width="45" height="18" alt="Element">
     <p>You can style a class by writing a fullstop, the name of the class with no spaces and then write the styles you want in a pair of braces.<img src="class.png" width="50" height="18" alt="Class">
     </p>
@@ -132,8 +139,7 @@
     <img src="multipleselectors.png" width="150" height="60" alt="Multiple selectors"> 
     <p>Selectors can also be combined, they don't have to be used individually. There are 5 different ways to combine selectors that I currently know of. 
     </p>
-    <section class=combiningselectors> <!--I'm going to split this into 6 columns
-      ALSO I HAVE TO EDIT FROM HERE DOWNWARDS-->
+    <section class=combiningselectors>
       <span></span>
       <div><span>Element with a class selector</span>
         <br>To do this, you simply type in the name of the element followed by a fullstop and then name of the class without spaces in between. 
@@ -166,19 +172,19 @@
       <div><span>General sibling selector</span>
         <br>To do this, you use the '~' to connect selectors. This means that all the siblings within the same parent will have certain attributes.
         <p>An example is shown below:
-        <br><img src="generalsiblingselector.png" width="248" height="64" alt="General Sibling Selector">
+        <br><img src="generalsiblingselector.png" width="232" height="62" alt="General Sibling Selector">
         <br>This means that any 'p' elements with the same parent 'div' element will be underlined.
         </p>
       </div>
     </section>
-    <p class=clear>All of this can be applied to different selectors and can be mixed. It doesn't have to be with element to element only.
+    <p class=clearleft>All of this can be applied to different selectors and can be mixed. It doesn't have to be with element to element only.
     </p>
     I have actually combined selectors myself by using <img src="nthchild.png" width="180" height="18" alt="nth-child selector"> in my stylesheet.
     <div>This helps me style every lecture title the way I want to because it is alwys the 1st div in every section that I have created.</div>
  </section>
 
  <section>
-    <div id=lecture15>Lecture 15: Pseudo-class Selectors</div>
+    <div id=lecture15>Lecture 15: Pseudo-class selectors</div>
     <div>There are also pseudo-class selectors which work based on the way the user interacts with the webpage. The pseudo-class refers to the current state of particlar content. To use one, you add a semi-colon after the selector and then the pseudo-class. Here are examples of a few:
     <div><img src="pseudoclassselector.png" width="300" height="54" alt="Pseudo-class selector"></div>
     <p>The ':link' one is a link in its natural state before it has been clicked on. ':visited' is a link that has been clicked on before. ':hover' is a link that is being hovered on. ':active' is a link that is being clicked on. ':nth&nbsp;-&nbsp;child(1~/odd/even)' is a particular child within the selector chosen. You can have any number child, or you coud put every even or odd child.
@@ -188,19 +194,54 @@
  </section>
 
  <section>
-    <div id=lecture16>Lecture 16 & 18: Style Placement & Styling Text</div>
+    <div id=lecture16>Lecture 16 & 18: Style placement & styling text</div>
     <div>
-      You can style text directly inside the necessary html, but it is more common practice to use a css stylesheet and then provide a link to it in the html.
-      <div>
+      You can style text directly inside the necessary html, but it is more common practice to use a css stylesheet and then provide a link to it in the html. Putting styling in the head tag of the actual html being edited will override the stylesheet, but it is not good practice.
+    <div>
         <img src="linkingstylesheet.png" width="272" height="21" alt="Link to stylesheet">
       </div> 
       <p>Remember that styling attributes work in a chronological order. So the lower it is in the html, the higher precedent it takes. (This obviously disregarding the rule of specificity.) This is why you place the link to the stylesheet inside the head area, as this means you have virtually added all your styles there.
       </p>
+ </section>
+<!--FROM HERE DOWNWARDS HAS NOT BEEN STYLED
+
+      ----------------------------------------------------------------------------------------------------------------
+      ----------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------->
+ <section>
+    <div id=lecture17>Lecture 17: Conflict resolution</div>
+ </section>
+
+ <section>
+    <div id=lecture19>Lecture 19: The box model</div>
+      Box sizing > Border Box
+      <img class="floatright" src="boxmodel.png" width="425" height="293" alt="Box model">
+      <div class="clearright"></div>
     </div>
  </section>
 
  <section>
-    <div id=lecture17>Lecture 17: Conflict Resolution</div>
+    <div id=lecture20>Lecture 20: The background property</div>
+ </section>
+
+ <section>
+    <div id=lecture21>Lecture 21: Floating</div>
+ </section>
+
+ <section>
+    <div id=lecture22>Lecture 22: Relative and absolute positioning</div>
+ </section>
+
+ <section>
+    <div id=lecture23>Lecture 23: Media queries</div>
+ </section>
+
+ <section>
+    <div id=lecture24>Lecture 24: Responsive design</div>
+ </section>
+
+ <section>
+    <div id=lecture25>Lecture 25: Twitter Bootstrap</div>
  </section>
 
 
@@ -208,7 +249,7 @@
 <br>
 <br>
  <p>
-   <a id=backtotop href="#top" title="Back to Top">Back to Top</a>
+   <a id=backtotop href="#top" title="Back to top">Back to top</a>
  </p>
 	<footer id=lecturestatus>
 		Lecture 17: 08/03/2019, <br>but have not written about it <br>specifically on this page.
