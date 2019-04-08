@@ -40,7 +40,7 @@
 </section>
 
 <section>
-   <div id=lecture6>Lecture 6: Different headers</div>
+   <div id=lecture6>Lecture 6: Different headers</div><!--Adjust to bootstrap columns-->
    <div class="notes">When the h1 and h2 tag are siblings of the same tag, they are the same size.</div>
    <h1 class="floatleft">h1</h1>
 	 <h2 class="floatleft">h2</h2>
@@ -52,9 +52,9 @@
  </section>
 
  <section>
-   <div id=lecture7>Lecture 7: Lists</div>
+   <div id=lecture7>Lecture 7: Lists</div><!--Adjust to bootstrap columns-->
    <article class="floatleft">
-   Unordered list: use the 'ul' tag.
+   <div>Unordered list: use the 'ul' tag.</div>
    <div>Then each listed item is surrounded in the 'li' tag.</div>
    <ul>
    	<li>Yellow</li>
@@ -69,7 +69,7 @@
    </ul>
    </article>
    <article class="floatleft">
-   Ordered list: use the 'ol' tag.
+   <div>Ordered list: use the 'ol' tag.</div>
    <div>Then each listed item is surrounded in the 'li' tag.</div>
    <ol>	
    	<li>Switch on the computer.</li>
@@ -92,7 +92,7 @@
    </div>
    <p>There are 3 characters that should always be escaped. They are (&lt;), (&gt;) and (&amp;).
    </p>
-   To show these as text you must type in <img src="lessthan.png" width="40" height="18" alt="Less than">, <img src="greaterthan.png" width="40" height="18" alt="Greater than">, <img src="ampersand.png" width="43" height="18" alt="Ampersand"> respectively.<!--I didn't type the semi-colon itself because it will turn into the entity.-->
+   To show these as text you must type in <img src="lessthan.png" width="40" height="18" alt="Less than">, <img src="greaterthan.png" width="40" height="18" alt="Greater than">, <img src="ampersand.png" width="43" height="18" alt="Ampersand"> respectively.
    <p>Other example of Entity References:
     <span class="examples"><br>(&copy;): <img src="copyright.png" width="50" height="18" alt="Copyright"><span class="examples">(&quot;): <img src="quotes.png" width="45" height="18" alt="Quotes"></span>
    </span>
@@ -128,7 +128,7 @@
  </section>
  
  <section>
-    <div id=lecture13>Lectures 13 & 14: Element, class and ID selectors</div> <!-- In this section I will change it to the media queries, twitter bootstrap scale.-->
+    <div id=lecture13>Lectures 13 & 14: Element, class and ID selectors</div> <!-- In this section I will change it to the media queries, twitter bootstrap scale. At most 3 columns, Small will be 1 column that is wider.-->
     You can style an element by simply writing the name of the element and then write the styles you want in a pair of braces.<img src="element.png" width="45" height="18" alt="Element">
     <p>You can style a class by writing a fullstop, the name of the class with no spaces and then write the styles you want in a pair of braces.<img src="class.png" width="50" height="18" alt="Class">
     </p>
@@ -202,7 +202,7 @@
     <div><img src="linkingstylesheet.png" width="272" height="21" alt="Link to stylesheet"></div> 
     <p>Remember that styling attributes work in a chronological order. So the lower it is in the html, the higher precedent it takes. (This obviously disregarding the rule of specificity.) This is why you place the link to the stylesheet inside the head area, as this means you have virtually added all your styles there.
     </p>
-    <div>There are many ways to style text. Here are few examples:</div> <!--Make this two columns. The examples of styling text will be one column, and the other side will be explanations. I also want to style the html as courier new, and maybe add extra line spancing.-->
+    <div>There are many ways to style text. Here are few examples:</div> 
     <div>
       <div class="html">
         <div>font-family: [font]</div>
@@ -226,16 +226,27 @@
       </div>
     </div>
  </section>
-<!--FROM HERE DOWNWARDS HAS NOT BEEN STYLED
 
-      ----------------------------------------------------------------------------------------------------------------
-      ----------------------------------------------------------------------------------------------------------------
-      --------------------------------------------------------------------------------------------------------------->
-
- <section> <!--Need to figure out why there is not a 60px space between this and the above section-->
+ <section>
     <div id=lecture17>Lecture 17: Conflict resolution</div>
     When two or more styles have been given to a particular element, class or ID, there needs to be a way to tell which style will take precedence. There are several ways to do this. The three ways that I know about are 'Origin precedence', 'Inheritance' and 'Specificity'.
-    <!-- I would like to create three columns here for a large screen, and one for medium screens -->
+
+    <p>The 'Origin Precedence' is that the last declaration wins in a conflict. If there is no conflict they merge. This means that something that is placed lower will have take precedence. There is also the fact that if two styles target the same area, one is in the stylesheet and the other is in the html, the html styling will prevail.</p>
+
+    <p>'Inheritance' rule is that every child of a tag that has certain properties will also have that property. 
+    For example in the following html below, if the div tag was styled, the span tags would have the same style because they are children of the div tag: 
+    <div class="examples"><img src="Inheritance.png" width="160" height="80" alt="Inheritance rule"></div></p>
+
+    The 'Specificity' rule is that the most specific selector combination will win. To work out the specificity score you used the model below.
+    <div><img src="specificityscore.png" width="600" height="180" alt="Specificity Score"></div>
+    <p>If a &nbsp;&nbsp; style="..." &nbsp;&nbsp; is used, you place a '1' in the thousands box. If you do this any style placed directly in an element tag will win a conflict.</p>
+    <p>For every ID used, you must add '1' to the hundreds box.</p>
+    <p>For every class, pseudo-class or attribute used you add '1' to the tens box.</p>
+    <div>For every element used, you add a '1' in the ones box.</div>
+    <span class="notes">Note: The highest specificity score is 1000.</span>
+    <div class="morenotes">To override everything you can use &nbsp;&nbsp; !important &nbsp;&nbsp; but it is ill-advised.</div>
+
+
  </section>
 
  <section>
