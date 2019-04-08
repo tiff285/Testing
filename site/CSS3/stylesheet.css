@@ -199,6 +199,12 @@ header nav a:hover, header nav a:active	{
 	width: 98%;
 }
 
+nav	{
+	height: 144px;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
 a:link, a:visited	{
 	color: #000000;
 }
