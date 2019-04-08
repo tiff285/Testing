@@ -97,7 +97,7 @@
     <span class="examples"><br>(&copy;): <img src="copyright.png" width="50" height="18" alt="Copyright"><span class="examples">(&quot;): <img src="quotes.png" width="45" height="18" alt="Quotes"></span>
    </span>
    </p>
-   You can also stop text wrapping when a window is made smaller by using <img src="nobreakspace.png" width="50" height="18" alt="No break space">. I've typed a long sentence so that I can show how to prevent broken words. <br>The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs.
+   You can also stop text wrapping when a window is made smaller by using <img src="nobreakspace.png" width="50" height="18" alt="No break space">. I've typed a long sentence so that I can show how to prevent broken words. <br>The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs. If you use multiple no break spaces together, it will be recognised as multiple spaces.
  </section>
 
  <section>
@@ -188,23 +188,20 @@
     <div id=lecture15>Lecture 15: Pseudo-class selectors</div>
     <div>There are also pseudo-class selectors which work based on the way the user interacts with the webpage. The pseudo-class refers to the current state of particlar content. To use one, you add a semi-colon after the selector and then the pseudo-class. Here are examples of a few:
     <div><img src="pseudoclassselector.png" width="300" height="54" alt="Pseudo-class selector"></div>
-    <p>The ':link' one is a link in its natural state before it has been clicked on. ':visited' is a link that has been clicked on before. ':hover' is a link that is being hovered on. ':active' is a link that is being clicked on. ':nth&nbsp;-&nbsp;child(1~/odd/even)' is a particular child within the selector chosen. You can have any number child, or you coud put every even or odd child.
-    </p>
+    <p>The ':link' one is a link in its natural state before it has been clicked on. ':visited' is a link that has been clicked on before. ':hover' is a link that is being hovered on. ':active' is a link that is being clicked on. ':nth&nbsp;-&nbsp;child(1~/odd/even)' is a particular child within the selector chosen. You can have any number child, or you coud put every even or odd child.</p>
     </div>
 
  </section>
 
  <section>
     <div id=lecture16>Lecture 16 & 18: Style placement & styling text</div>
-    <div>
-      You can style text directly inside the necessary html, but it is more common practice to use a css stylesheet and then provide a link to it in the html. Putting styling in the head tag of the actual html being edited will override the stylesheet, but it is not good practice.
-    </div>
+    <div>You can style text directly inside the necessary html, but it is more common practice to use a css stylesheet and then provide a link to it in the html. Putting styling in the head tag of the actual html being edited will override the stylesheet, but it is not good practice.</div>
     <div><img src="linkingstylesheet.png" width="272" height="21" alt="Link to stylesheet"></div> 
     <p>Remember that styling attributes work in a chronological order. So the lower it is in the html, the higher precedent it takes. (This obviously disregarding the rule of specificity.) This is why you place the link to the stylesheet inside the head area, as this means you have virtually added all your styles there.
     </p>
     <div>There are many ways to style text. Here are few examples:</div> 
     <div>
-      <div class="html">
+      <div class="html leftmargin40">
         <div>font-family: [font]</div>
         <div>color: [colour]</div>
         <div>font-style: [normal, italic, oblique, initial, inherit]</div>
@@ -245,15 +242,20 @@
     <div>For every element used, you add a '1' in the ones box.</div>
     <span class="notes">Note: The highest specificity score is 1000.</span>
     <div class="morenotes">To override everything you can use &nbsp;&nbsp; !important &nbsp;&nbsp; but it is ill-advised.</div>
-
-
  </section>
 
  <section>
-    <div id=lecture19>Lecture 19: The box model</div>
-      Box sizing > Border Box
+    <div id=lecture19>Lecture 19: The box model</div><!--Use bootstrap to make 2 columns (text column bigger than image)/1 column-->
+    <div>Content: The actual thing that is within the tags. Can be text, a link or an image.</div>
+      <p>Padding: You can add padding to the top, right, bottom and left of the content. It is between the content and the border.</p>
+      <p>Border: Between the padding and the margin.</p>
+      <p>Margin: Automatically set by the browser if there is no style added. When margins are side-by-side, they are cumulative. However, when they are top-to-bottom the margins collapse and the largest one wins.</p>
+      <p>Height and Width: pretty self-explanatory except for the fact that when the box-sizing is set to border box, it accounts for the whole box of the element and not the height and width of the content which is the default setting.</p>
+      <div>To change the box-sizing to border box you do this: <span class="html">box-sizing: border-box;</span></div>
       <img class="floatright" src="boxmodel.png" width="425" height="293" alt="Box model">
       <div class="clearright"></div>
+      Overflow: when the box-sizing is set to border-box, a width and a height has also been set, and your content is spilling out of its box, you can use the different styling options to alter its appearance.
+      <!--I am going to type the different overflow options-->
     </div>
  </section>
 
@@ -289,7 +291,7 @@
    <a id=backtotop href="#top" title="Back to top">Back to top</a>
  </p>
 	<footer id=lecturestatus>
-		Lecture 17: 08/03/2019, <br>but have not written about it <br>specifically on this page.
+		<div>Lecture 17: 08/04/2019</div>
 	</footer>
 </body>
 </html>

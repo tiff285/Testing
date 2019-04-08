@@ -258,6 +258,10 @@ ul, ol {
 	float: right;
 }
 
+.leftmargin40	{
+	margin-left: 40px
+}
+
 .combiningselectors > div	{
 	float: left;
 	font-size: 100%;
@@ -281,7 +285,6 @@ ul, ol {
 	font-family: courier new;
 	font-size: 102%;
 	line-height: 2em;
-	margin-left: 40px;
 }
 
 .smallerfont	{
