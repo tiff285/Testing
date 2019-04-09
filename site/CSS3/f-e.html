@@ -233,32 +233,34 @@
     <div>For example in the following html below, if the div tag was styled, the span tags would have the same style because they are children of the div tag:</div>
     <img src="Inheritance.png" class="leftmargin40" width="160" height="80" alt="Inheritance rule">
 
-    <p>The 'Specificity' rule is that the most specific selector combination will win. To work out the specificity score you used the model below.
+    <br><br>The 'Specificity' rule is that the most specific selector combination will win. To work out the specificity score you used the model below.
     <img src="specificityscore.png" width="600" height="180" alt="Specificity Score"></div>
     <p>If a &nbsp;&nbsp; style="..." &nbsp;&nbsp; is used, you place a '1' in the thousands box. If you do this any style placed directly in an element tag will win a conflict.</p>
     <p>For every ID used, you must add '1' to the hundreds box.</p>
     <p>For every class, pseudo-class or attribute used you add '1' to the tens box.</p>
     <div>For every element used, you add a '1' in the ones box.</div>
     <span class="notes">Note: The highest specificity score is 1000.</span>
-    <div class="morenotes">To override everything you can use &nbsp;&nbsp; !important &nbsp;&nbsp; but it is ill-advised.</div></p>
+    <div class="morenotes">To override everything you can use &nbsp;&nbsp; !important &nbsp;&nbsp; but it is ill-advised.</div>
  </section>
 
  <section>
     <div id=lecture19>Lecture 19: The box model</div><!--Use bootstrap to make 2 columns (text column bigger than image)/1 column-->
-    <div>Content: The actual thing that is within the tags. Can be text, a link or an image.</div>
+    <div>
+      <div>Content: The actual thing that is within the tags. Can be text, a link or an image.</div>
       <p>Padding: You can add padding to the top, right, bottom and left of the content. It is between the content and the border.</p>
       <p>Border: Between the padding and the margin.</p>
       <p>Margin: Automatically set by the browser if there is no style added. When margins are side-by-side, they are cumulative. However, when they are top-to-bottom the margins collapse and the largest one wins.</p>
       <p>Height and Width: pretty self-explanatory except for the fact that when the box-sizing is set to border box, it accounts for the whole box of the element and not the height and width of the content which is the default setting.</p>
-      <div>To change the box-sizing to border box you do this:</div>
+      To change the box-sizing to border box you do this:
       <div class="html leftmargin40">box-sizing: border-box;</div>
-      Overflow: when the box-sizing is set to border-box, a width and a height has also been set, and your content is spilling out of its box, you can use the different styling options to alter its appearance.
-      <!--I am going to type the different overflow options in html style-->
+      <br>Overflow: when the box-sizing is set to border-box, a width and a height has also been set, and your content is spilling out of its box, you can use the different styling options to alter its appearance.
       To change the overflow you type this html.
       <div class="html leftmargin40">overflow: [visible, hidding, auto, scroll]</div>
-      <!--Notes-->'auto' creates a scroll bar when necessary and is usually used for Terms of Service.
-      scroll; always shows a scroll bar.
-      <img src="boxmodel.png" width="425" height="293" alt="Box model">
+      <div class="notes">'auto' creates a scroll bar when necessary and is usually used for Terms of Service.
+      scroll; always shows a scroll bar.</div>
+    </div>
+    <div>
+        <img src="boxmodel.png" width="425" height="293" alt="Box model">
     </div>
  </section>
 
@@ -279,13 +281,21 @@
  <section>
     <div id=lecture21>Lecture 21: Floating</div>
     You can creat multi-column designs using floating. When you float an element, it means that you are taking it out of the regular flow. 
-    <!--list-->It should be noted that margins typically collapse when they are top-to-bottom, but when elements have been floated, their margins do not collapse. 
-    <!--list-->To stop an item floating on top of other elements you use <!--html style-->clear: [left, right, both].
-    <!--list-->To make columns, you must set the width for each section as a percentage. When doing this you must remember to set the box-sizing to border box, if not, your content will spill out of it's box.
+    <ul>
+      <li>It should be noted that margins typically collapse when they are top-to-bottom, but when elements have been floated, their margins do not collapse. </li>
+      <li>To stop an item floating on top of other elements you use <span class="html">clear: [left, right, both]</span>.</li>
+      <li>To make columns, you must set the width for each section as a percentage. When doing this you must remember to set the box-sizing to border box, if not, your content will spill out of it's box.</li>
+    </ul>
 
     An example of me floating is shown under 'Lecture 6' where I have floated the different headers to the left.
     Here is another example:
-    <!--float 4 small boxes that are different colours-->
+    <div class="leftmargin40">
+      <div class="lecture21floating"> </div>
+      <div class="lecture21floating"> </div>
+      <div class="lecture21floating"> </div>
+      <div class="lecture21floating"> </div>
+      <div class="clearleft"></div>
+    </div>
  </section>
 
  <section>
