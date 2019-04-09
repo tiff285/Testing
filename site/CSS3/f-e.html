@@ -36,7 +36,6 @@
    To add an alert when you click on particular content, you have to add the onclick attribute to the tag for the contnent and then put alert, and your mesage in quotes within parentheses. Like this. <img src="alert.png" width="238" height="18" alt="Alert">
    <div onclick="alert('IT WORKS');">
    When you click on this sentence, an alert will appear confirming it works.</div>
-
 </section>
 
 <section>
@@ -230,18 +229,18 @@
 
     <p>The 'Origin Precedence' is that the last declaration wins in a conflict. If there is no conflict they merge. This means that something that is placed lower will have take precedence. There is also the fact that if two styles target the same area, one is in the stylesheet and the other is in the html, the html styling will prevail.</p>
 
-    <p>'Inheritance' rule is that every child of a tag that has certain properties will also have that property. 
-    For example in the following html below, if the div tag was styled, the span tags would have the same style because they are children of the div tag: 
-    <div class="examples"><img src="Inheritance.png" width="160" height="80" alt="Inheritance rule"></div></p>
+    <div>'Inheritance' rule is that every child of a tag that has certain properties will also have that property.</div>
+    <div>For example in the following html below, if the div tag was styled, the span tags would have the same style because they are children of the div tag:</div>
+    <img src="Inheritance.png" class="leftmargin40" width="160" height="80" alt="Inheritance rule">
 
-    The 'Specificity' rule is that the most specific selector combination will win. To work out the specificity score you used the model below.
-    <div><img src="specificityscore.png" width="600" height="180" alt="Specificity Score"></div>
+    <p>The 'Specificity' rule is that the most specific selector combination will win. To work out the specificity score you used the model below.
+    <img src="specificityscore.png" width="600" height="180" alt="Specificity Score"></div>
     <p>If a &nbsp;&nbsp; style="..." &nbsp;&nbsp; is used, you place a '1' in the thousands box. If you do this any style placed directly in an element tag will win a conflict.</p>
     <p>For every ID used, you must add '1' to the hundreds box.</p>
     <p>For every class, pseudo-class or attribute used you add '1' to the tens box.</p>
     <div>For every element used, you add a '1' in the ones box.</div>
     <span class="notes">Note: The highest specificity score is 1000.</span>
-    <div class="morenotes">To override everything you can use &nbsp;&nbsp; !important &nbsp;&nbsp; but it is ill-advised.</div>
+    <div class="morenotes">To override everything you can use &nbsp;&nbsp; !important &nbsp;&nbsp; but it is ill-advised.</div></p>
  </section>
 
  <section>
@@ -253,7 +252,6 @@
       <p>Height and Width: pretty self-explanatory except for the fact that when the box-sizing is set to border box, it accounts for the whole box of the element and not the height and width of the content which is the default setting.</p>
       <div>To change the box-sizing to border box you do this: <span class="html">box-sizing: border-box;</span></div>
       <img class="floatright" src="boxmodel.png" width="425" height="293" alt="Box model">
-      <div class="clearright"></div>
       Overflow: when the box-sizing is set to border-box, a width and a height has also been set, and your content is spilling out of its box, you can use the different styling options to alter its appearance.
       <!--I am going to type the different overflow options-->
     </div>
