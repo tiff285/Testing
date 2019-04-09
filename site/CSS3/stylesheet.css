@@ -245,17 +245,9 @@ ul, ol {
 	margin-left: 32px;
 }
 
-.examples	{
-	margin-left: 40px;
-}
-
 .floatleft	{
 	float: left;
 	margin-left: 50px;
-}
-
-.floatright	{
-	float: right;
 }
 
 .leftmargin40	{
@@ -277,13 +269,16 @@ ul, ol {
 	font-weight: 0;
 }
 
-.combiningselectors > div > span	{
+.underline	{
 	text-decoration: underline;
 }
 
 .html	{
 	font-family: courier new;
 	font-size: 102%;
+}
+
+.doublelineheight 	{
 	line-height: 2em;
 }
 

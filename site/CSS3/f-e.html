@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Testing page: Front-end</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
@@ -17,7 +17,7 @@
       <li><a href="#lecture10">Lecture 10: Displaying images</a></li>
       <li><a href="#lecture13">Lectures 13 & 14: Element, class and ID selectors</a></li>
       <li><a href="#lecture15">Lecture 15: Pseudo-class selectors</a></li>
-      <li><a href="#lecture16">Lecture 16 & 18: Style placement & styling text</a></li>
+      <li><a href="#lecture16">Lectures 16 & 18: Style placement & styling text</a></li>
       <li><a href="#lecture17">Lecture 17: Conflict resolution</a></li>
       <li><a href="#lecture19">Lecture 19: The box model</a></li>
       <li><a href="#lecture20">Lecture 20: The background property</a></li>
@@ -25,7 +25,7 @@
       <li><a href="#lecture22">Lecture 22: Relative and absolute positioning</a></li>
       <li><a href="#lecture23">Lecture 23: Media queries</a></li>
       <li><a href="#lecture24">Lecture 24: Responsive design</a></li>
-      <li><a href="#lecture25">Lecture 25: Twitter Bootstrap</a></li>      
+      <li><a href="#lecture25">Lectures 25 & 26: Twitter Bootstrap</a></li>      
     </nav>
  </header>
 
@@ -93,7 +93,7 @@
    </p>
    To show these as text you must type in <img src="lessthan.png" width="40" height="18" alt="Less than">, <img src="greaterthan.png" width="40" height="18" alt="Greater than">, <img src="ampersand.png" width="43" height="18" alt="Ampersand"> respectively.
    <p>Other example of Entity References:
-    <span class="examples"><br>(&copy;): <img src="copyright.png" width="50" height="18" alt="Copyright"><span class="examples">(&quot;): <img src="quotes.png" width="45" height="18" alt="Quotes"></span>
+    <span class="leftmargin40"><br>(&copy;): <img src="copyright.png" width="50" height="18" alt="Copyright"><span class="leftmargin40">(&quot;): <img src="quotes.png" width="45" height="18" alt="Quotes"></span>
    </span>
    </p>
    You can also stop text wrapping when a window is made smaller by using <img src="nobreakspace.png" width="50" height="18" alt="No break space">. I've typed a long sentence so that I can show how to prevent broken words. <br>The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs. If you use multiple no break spaces together, it will be recognised as multiple spaces.
@@ -141,35 +141,35 @@
     </p>
     <section class=combiningselectors>
       <span></span>
-      <div><span>Element with a class selector</span>
+      <div><span class="underline">Element with a class selector</span>
         <br>To do this, you simply type in the name of the element followed by a fullstop and then name of the class without spaces in between. 
         <p>An example is shown below:
         <br><img src="elementwithclassselector.png" width="182" height="56" alt="Element with Class Selector">
         <br>This means that every 'span' element that is classed as examples will have a 40px left margin.
         </p>
       </div>
-      <div><span>Direct child selector</span>
+      <div><span class="underline">Direct child selector</span>
         <br>The direct child inside the parent will be affected. Not all descendants, just the ones that are directly inside the parent. 
         <p>An example is shown below:
         <br><img src="directchildselector.png" width="142" height="56" alt="Direct Child Selector">
         <br>This means that every 'p' element that is a direct child of an article will be blue. A 'p' tag within a 'div' tag that is within an 'article' tag, will not be affected.
         </p>
       </div>
-      <div><span>Descendant selector</span>
+      <div><span class="underline">Descendant selector</span>
         <br>Is the exact same as the direct child selector, except for the fact that it also includes any of the tags that are also not direct child.
         <p>An example is shown below:
         <br><img src="descendantselector.png" width="170" height="56" alt="Descendant Selector">
         <br>This means that any 'p' elements that are within the 'article' element will have the font size of 24px.
         </p>
       </div>
-      <div><span>Adjacent sibling selector</span>
+      <div><span class="underline">Adjacent sibling selector</span>
         <br>This is used to affect selectors that are next to each other. You use the '+' to connect selectors.
         <p>An example is shown below:
         <br><img src="adjacentsiblingselector.png" width="222" height="56" alt="Adjacent Sibling Selector">
         <br>This means that any 'p' tag that directly follows a 'p' tag will have a yellow backfground. The first p itself is not affected.
         </p>
       </div>
-      <div><span>General sibling selector</span>
+      <div><span class="underline">General sibling selector</span>
         <br>To do this, you use the '~' to connect selectors. This means that all the siblings within the same parent will have certain attributes.
         <p>An example is shown below:
         <br><img src="generalsiblingselector.png" width="232" height="62" alt="General Sibling Selector">
@@ -193,14 +193,14 @@
  </section>
 
  <section>
-    <div id=lecture16>Lecture 16 & 18: Style placement & styling text</div>
+    <div id=lecture16>Lectures 16 & 18: Style placement & styling text</div>
     <div>You can style text directly inside the necessary html, but it is more common practice to use a css stylesheet and then provide a link to it in the html. Putting styling in the head tag of the actual html being edited will override the stylesheet, but it is not good practice.</div>
     <div><img src="linkingstylesheet.png" width="272" height="21" alt="Link to stylesheet"></div> 
     <p>Remember that styling attributes work in a chronological order. So the lower it is in the html, the higher precedent it takes. (This obviously disregarding the rule of specificity.) This is why you place the link to the stylesheet inside the head area, as this means you have virtually added all your styles there.
     </p>
     <div>There are many ways to style text. Here are few examples:</div> 
     <div>
-      <div class="html leftmargin40">
+      <div class="html doublelineheight leftmargin40">
         <div>font-family: [font]</div>
         <div>color: [colour]</div>
         <div>font-style: [normal, italic, oblique, initial, inherit]</div>
@@ -250,35 +250,102 @@
       <p>Border: Between the padding and the margin.</p>
       <p>Margin: Automatically set by the browser if there is no style added. When margins are side-by-side, they are cumulative. However, when they are top-to-bottom the margins collapse and the largest one wins.</p>
       <p>Height and Width: pretty self-explanatory except for the fact that when the box-sizing is set to border box, it accounts for the whole box of the element and not the height and width of the content which is the default setting.</p>
-      <div>To change the box-sizing to border box you do this: <span class="html">box-sizing: border-box;</span></div>
-      <img class="floatright" src="boxmodel.png" width="425" height="293" alt="Box model">
+      <div>To change the box-sizing to border box you do this:</div>
+      <div class="html leftmargin40">box-sizing: border-box;</div>
       Overflow: when the box-sizing is set to border-box, a width and a height has also been set, and your content is spilling out of its box, you can use the different styling options to alter its appearance.
-      <!--I am going to type the different overflow options-->
+      <!--I am going to type the different overflow options in html style-->
+      To change the overflow you type this html.
+      <div class="html leftmargin40">overflow: [visible, hidding, auto, scroll]</div>
+      <!--Notes-->'auto' creates a scroll bar when necessary and is usually used for Terms of Service.
+      scroll; always shows a scroll bar.
+      <img src="boxmodel.png" width="425" height="293" alt="Box model">
     </div>
  </section>
 
  <section>
     <div id=lecture20>Lecture 20: The background property</div>
+    You can use a background image by using:
+    <div class="html leftmargin40">background-image: url('image.jpg')</div>
+    To edit whether or how it repeats you use:
+    <div class="html leftmargin40">background-repeat: [inherit, no-repeat, repeat;l, repeat-x, repeat-y, space, round]</div>
+    <!--Notes-->'repeat-x' repeats horizontally and 'repeat-y' repeats vertically.
+    'space' repeats evenly spaced out and 'round' repeats evenly with no space.
+    You can also choose the position of said imagine by using:
+    <div class="html leftmargin40">background-position: [top, right, bottom, left]</div>
+    All these background properties can be specified under just <!--html style-->&nbsp;&nbsp;background: [...],&nbsp;&nbsp; but doing so will make the priority work in a consequential fashion. This means that if you have an image and a color, the later mentioned on will override all previous properties unless it's respecified in <!--html style-->background: [...].
+    <!--show example of backround use on elements [do for all apart from inherit, use 6 columns][use simple small image]-->
  </section>
 
  <section>
     <div id=lecture21>Lecture 21: Floating</div>
+    You can creat multi-column designs using floating. When you float an element, it means that you are taking it out of the regular flow. 
+    <!--list-->It should be noted that margins typically collapse when they are top-to-bottom, but when elements have been floated, their margins do not collapse. 
+    <!--list-->To stop an item floating on top of other elements you use <!--html style-->clear: [left, right, both].
+    <!--list-->To make columns, you must set the width for each section as a percentage. When doing this you must remember to set the box-sizing to border box, if not, your content will spill out of it's box.
+
+    An example of me floating is shown under 'Lecture 6' where I have floated the different headers to the left.
+    Here is another example:
+    <!--float 4 small boxes that are different colours-->
  </section>
 
  <section>
     <div id=lecture22>Lecture 22: Relative and absolute positioning</div>
+    Firstly you must know about static positioning. This is the default positioning for all elements except html. It's basically the regular flow of a document.
+
+    Relative positioning
+    Relative positioning is when an element is positioned relative to its position in the the regular document flow. The positioning properties are top, bottom, left and right.
+    It should be noted that when an element is relatively positioned, it is not taken out of the regular document flow. This means that its original position in the document is preserved. As far as other elements are concerned, the element is still in its original position.
+    Look at the effect of the following html:
+    <!--make this two columns-->
+    <!--image of relativepositioninghtml-->
+    <!--image of the reletaivepositioning-->
+    <!--actual example of doing it with textboxes saying static and relative-->
+
+    Absolute positioning
+    Offsets are relative to the position of its nearest ancestor that does not have static positioning.
+    As mentioned earlier, by default 'html' is the only element that has relative positioning. In absolute positioning, the element is both taken out of the visual and actual document flow. This means that unlike with relative positioning, other elements know that the element is no longer in it's original position.
  </section>
 
  <section>
     <div id=lecture23>Lecture 23: Media queries</div>
+    Adjusting the way things appear on the screen depending on the size of the device.
+    <!--html-->@media (mediafeature)  {
+    @media (mediafeature) logical operator (mediafeature)   {
+
+    The 'mediafeature' can be: <!--html-->&nbsp;&nbsp;min/max-width/height: px;&nbsp;&nbsp; and the 'logicaloperator' can be [and] or [,].
+    <!--Note-->'and' is more commonly used.
+    I have actually used media queries on this html page for several sections. You can take a look at the 'Lecture 16 & 18' are to see it in effect. When the device has a large screen, the section is 2 columns, on anything smaller, it is 1 column. Below is a picture of the html I have used:
+    <!--leftmargin40--><!--image of mediaqueries-->
+
+    It is important to make sure that you do not overlap breakpoints. By providing bare styling and then dealing with media queries, you can avoid this.
  </section>
 
  <section>
     <div id=lecture24>Lecture 24: Responsive design</div>
+    A responsive site is a site that's designed to change its layout by usiing fluid proportion-based grids, flexible images and CSS3 media queries. This basically means tht it adapts to the size of the displaying device. The visual delivery itself may even change.
+
+    The alternative to responsive design are servers that detect whether a mobile or laptop/PC is being used. The issue with this is that you end up sacrificing user experience because you are trying to find one mobile version that fits all, when mobile devices have many variations.
+
+    The most common layout for responsive designs is a 12-column grid. This is because it has many factors.
+    <!--image of responsivelayout-->
+
+    You can add styling that makes everything appear in one column when viewing on smaller screens. However, phones are set by default to zoom out on the browser, so instead of seeing only one column, you may still see move as if you were viewing on a larger screen. To prevent this, you should put &nbsp;&nbsp;<!--html-->name="viewport" content="width=device-width, initial-scale=1"&nbsp;&nbsp; in the meta tag.
  </section>
 
  <section>
-    <div id=lecture25>Lecture 25: Twitter Bootstrap</div>
+    <div id=lecture25>Lectures 25 & 26: Twitter Bootstrap</div>
+    Twitter Bootstrap is the most popular HTML, CSS and Javascript for developing responsive mobile first projects on the web.
+    <!--Note-->Mobile first has two meanings:
+    <!--morenotes-->1) You code for mobile first.
+    2) You code with desktop version, but plan for mobile version.
+
+    Bootstrap class names are typically written in the &nbsp;&nbsp;<!--html-->col-[size]-[span]&nbsp;&nbsp; fashion. The 'size' can be 'lg', 'md', 'sm' and 'xs'. Columns will collapse unless they are specified. 
+    The 'span' is the number of columns wide that the section is. This will be a number from 1~12.
+
+    If you would like a layout to always stay the same, its best to use &nbsp;&nbsp;<!--html-->col-xs-[span].
+
+    The structure for a grid-based layout must be the following:
+    <!--leftmargin40--><!--image of bootstrapstructure-->
  </section>
 
 
@@ -297,7 +364,6 @@
 
 
    
-
 
 
 
