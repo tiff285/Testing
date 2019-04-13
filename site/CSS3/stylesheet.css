@@ -218,6 +218,18 @@ header	{
 	margin-left: 50px;
 }
 
+.center	{
+	text-align: center;
+}
+
+.margintop0	{
+	margin-top: 0px;
+}
+
+.marginbottom0	{
+	margin-bottom: 0px;
+}
+
 /* Specific section styling */
 header nav a:link, header nav a:visited	{
 	color: #FFFFFF;
@@ -299,6 +311,72 @@ ul, ol {
 	background-color: #FFDD69;
 	margin-right: 20px;
 	float: left;
+}
+
+.background1	{
+	background-image: url('nugget.jpg');
+	background-repeat: no-repeat;
+	width: 180px;
+	height: 200px;
+	margin-left: 1px;
+	border: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+.background2	{
+	background-image: url('nugget.jpg');
+	background-repeat: 	repeat;
+	width: 180px;
+	height: 200px;
+	margin-left: 1px;
+	border: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+.background3	{
+	background-image: url('nugget.jpg');
+	background-repeat: 	repeat-x;
+	width: 180px;
+	height: 200px;
+	margin-left: 1px;
+	border: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+.background4	{
+	background-image: url('nugget.jpg');
+	background-repeat: 	repeat-y;
+	width: 180px;
+	height: 200px;
+	margin-left: 1px;
+	border: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+.background5	{
+	background-image: url('nugget.jpg');
+	background-repeat: 	space;
+	width: 180px;
+	height: 200px;
+	margin-left: 1px;
+	border: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+.background6	{
+	background-image: url('nugget.jpg');
+	background-repeat: 	round;
+	width: 180px;
+	height: 200px;
+	margin-left: 1px;
+	border: solid;
+	border-width: 1px;
+	border-color: #000000;
 }
 
 #backtotop {
