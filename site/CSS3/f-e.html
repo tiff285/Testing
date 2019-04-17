@@ -189,7 +189,6 @@
     <div><img src="pseudoclassselector.png" width="300" height="54" alt="Pseudo-class selector"></div>
     <p>The ':link' one is a link in its natural state before it has been clicked on. ':visited' is a link that has been clicked on before. ':hover' is a link that is being hovered on. ':active' is a link that is being clicked on. ':nth&nbsp;-&nbsp;child(1~/odd/even)' is a particular child within the selector chosen. You can have any number child, or you coud put every even or odd child.</p>
     </div>
-
  </section>
 
  <section>
@@ -275,10 +274,9 @@
     <br><div>You can also choose the position of said imagine by using:</div>
     <div class="html leftmargin40">background-position: [top, right, bottom, left]</div>
     <br>All these background properties can be specified under just <span class="html">&nbsp;&nbsp;background: [...]</span>,&nbsp;&nbsp; but doing so will make the priority work in a consequential fashion. This means that if you have an image and a color, the later mentioned on will override all previous properties unless it's respecified in <span class="html">background: [...]</span>.
-    <!--show example of backround use on elements [do for all apart from inherit, use 6 columns][use simple small image]-->
     <br><br>
     <div>Below are examples of each background property style that you can have. They are in the following order 'no-repeat', 'repeat, 'repeat-x', 'repeat-y', 'space' and 'round'.</div>
-    <!--I need to figure out a way to give each section a title that is no in the contained box, but is always positioned at the top of each box, that way I can give each box a header      I also need to figure out how to make the responsive design actually work. The sections are not 6, 3 and 2 columns.. It is just trying to fit the screen.-->
+    <!--I need to figure out a way to give each section a title that is no in the contained box, but is always positioned at the top of each box, that way I can give each box a header-->
     <div class="row">
       <div class="background1 col-lg-2 col-md-4 col-sm-6"></div>
       <div class="background2 col-lg-2 col-md-4 col-sm-6"></div>
@@ -345,14 +343,18 @@
 
  <section>
     <div id=lecture24>Lecture 24: Responsive design</div>
-    A responsive site is a site that's designed to change its layout by using fluid proportion-based grids, flexible images and CSS3 media queries. This basically means tht it adapts to the size of the displaying device. The visual delivery itself may even change.
-
-    The alternative to responsive design are servers that detect whether a mobile or laptop/PC is being used. The issue with this is that you end up sacrificing user experience because you are trying to find one mobile version that fits all, when mobile devices have many variations.
-
-    The most common layout for responsive designs is a 12-column grid. This is because it has many factors.
-    <!--image of responsivelayout-->
-
-    You can add styling that makes everything appear in one column when viewing on smaller screens. However, phones are set by default to zoom out on the browser, so instead of seeing only one column, you may still see move as if you were viewing on a larger screen. To prevent this, you should put &nbsp;&nbsp;<!--html-->name="viewport" content="width=device-width, initial-scale=1"&nbsp;&nbsp; in the meta tag.
+    <div>A responsive site is a site that's designed to change its layout by using fluid proportion-based grids, flexible images and CSS3 media queries. This basically means tht it adapts to the size of the displaying device. The visual delivery itself may even change.</div>
+    <br>
+    <div>The alternative to responsive design are servers that detect whether a mobile or laptop/PC is being used. The issue with this is that you end up sacrificing user experience because you are trying to find one mobile version that fits all, when mobile devices have many variations.</div>
+    <br>
+    <div>The most common layout for responsive designs is a 12-column grid. This is because it has many factors.</div>
+    <div class="row positioning">
+      <div class="col-lg-6 col-md-6 col-sm-6"><img src="responsivelayout.png" width="100%" alt="Responsive Layout"></div>
+      <div id="abspos" class="notes col-lg-6 col-md-6 col-sm-6">Note: The spaces between each box is the padding.</div>
+      <div class="clearleft"></div>
+    </div>
+    <br>
+    <div>You can add styling that makes everything appear in one column when viewing on smaller screens. However, phones are set by default to zoom out on the browser, so instead of seeing only one column, you may still see move as if you were viewing on a larger screen. To prevent this, you should put &nbsp;&nbsp;<span class="html">name="viewport" content="width=device-width, initial-scale=1"</span>&nbsp;&nbsp; in the meta tag.</div>
  </section>
 
  <section>

@@ -218,12 +218,26 @@ header	{
 	margin-left: 50px;
 }
 
+.positioning	{
+	position: relative;
+}
+
+#abspos 	{
+	position: absolute;
+	bottom: 10px; right: -10px;
+
+}
+
 .center	{
 	text-align: center;
 }
 
 .margintop0	{
 	margin-top: 0px;
+}
+
+.margintop20	{
+	margin-top: 20px;
 }
 
 .marginbottom0	{
