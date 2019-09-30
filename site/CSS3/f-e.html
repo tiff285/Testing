@@ -8,7 +8,8 @@
 <body>
 	<header> <!-- When I learn how to, I will make the navigation bar a drop down menu, so it takes up less space on the page. -->
 		<h1 id=top>Testing page</h1>
-		<nav>
+<!--navigation panel-->
+    <nav>
       <li><a href="#lecture1">Lecture 1: Pop-ups</a></li>
       <li><a href="#lecture6">Lecture 6: Different headers</a></li>
       <li><a href="#lecture7">Lecture 7: Lists</a></li>
@@ -31,14 +32,15 @@
 
  <br>
  <br>
- <section><!--lecture1-->
+<!--lecture1-->
+ <section>
    <div id=lecture1>Lecture 1: Pop-ups</div>
-   To add an alert when you click on particular content, you have to add the onclick attribute to the tag for the contnent and then put alert, and your mesage in quotes within parentheses. Like this. <img src="alert.png" width="238" height="18" alt="Alert">
-   <div onclick="alert('IT WORKS');">
-   When you click on this sentence, an alert will appear confirming it works.</div>
-</section>
+   <div>To add an alert when you click on particular content, you have to add the onclick attribute to the tag for the contnent and then put alert, and your mesage in quotes within parentheses. Like this.<img src="alert.png" width="238" height="18" alt="Alert"></div>
+   <div onclick="alert('IT WORKS');">When you click on this sentence, an alert will appear confirming it works.</div>
+ </section>
 
-<section><!--lecture6-->
+<!--lecture6-->
+ <section>
    <div id=lecture6>Lecture 6: Different headers</div><!--Adjust to bootstrap columns-->
    <div class="notes">When the h1 and h2 tag are siblings of the same tag, they are the same size.</div>
    <h1 class="floatleft">h1</h1>
@@ -50,7 +52,8 @@
    <div class="clearleft"></div>
  </section>
 
- <section><!--lecture7-->
+<!--lecture7-->
+ <section>
    <div id=lecture7>Lecture 7: Lists</div><!--Adjust to bootstrap columns-->
    <article class="floatleft">
    <div>Unordered list: use the 'ul' tag.</div>
@@ -59,8 +62,8 @@
    	<li>Yellow</li>
    	<li>Blue
    		<ul>
-   			<li>Tiffany Blue</li>
-   			<li>Turquoise</li>
+   		 <li>Tiffany Blue</li>
+   		 <li>Turquoise</li>
    		</ul>
    	</li>
 		<li>Black</li>
@@ -74,8 +77,8 @@
    	<li>Switch on the computer.</li>
    	<li>Log in.
 			<ul>
-				<li>Enter user.</li>
-  				<li>Enter password.</li>
+			 <li>Enter user.</li>
+  			 <li>Enter password.</li>
  			</ul>
 		</li>
 		<li>Open Google Chrome.</li>
@@ -85,32 +88,35 @@
    </div>
  </section>
 
- <section><!--lecture8-->
+<!--lecture8-->
+  <section>
    <div id=lecture8>Lecture 8: Character entity references</div>
    <div class="notes"> Note: For some reason, I don't need to add a semi-colon for some entities to show, that why I have enclosed the words in brackets
    </div>
    <p>There are 3 characters that should always be escaped. They are (&lt;), (&gt;) and (&amp;).
    </p>
-   To show these as text you must type in <img src="lessthan.png" width="40" height="18" alt="Less than">, <img src="greaterthan.png" width="40" height="18" alt="Greater than">, <img src="ampersand.png" width="43" height="18" alt="Ampersand"> respectively.
+   <div>To show these as text you must type in <img src="lessthan.png" width="40" height="18" alt="Less than">, <img src="greaterthan.png" width="40" height="18" alt="Greater than">, <img src="ampersand.png" width="43" height="18" alt="Ampersand"> respectively.</div>
    <p>Other example of Entity References:
-    <span class="leftmargin40"><br>(&copy;): <img src="copyright.png" width="50" height="18" alt="Copyright"><span class="leftmargin40">(&quot;): <img src="quotes.png" width="45" height="18" alt="Quotes"></span>
-   </span>
+     <span class="leftmargin40"><br>(&copy;): <img src="copyright.png" width="50" height="18" alt="Copyright"><span class="leftmargin40">(&quot;): <img src="quotes.png" width="45" height="18" alt="Quotes"></span>
+     </span>
    </p>
-   You can also stop text wrapping when a window is made smaller by using <img src="nobreakspace.png" width="50" height="18" alt="No break space">. I've typed a long sentence so that I can show how to prevent broken words. <br>The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs. If you use multiple no break spaces together, it will be recognised as multiple spaces.
+   <div>You can also stop text wrapping when a window is made smaller by using <img src="nobreakspace.png" width="50" height="18" alt="No break space">. I've typed a long sentence so that I can show how to prevent broken words.</div>
+   <div>The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs. If you use multiple no break spaces together, it will be recognised as multiple spaces.</div>
  </section>
 
- <section><!--lecture9-->
+<!--lecture9-->
+ <section>
       <div id=lecture9>Lecture 9: Creating links</div>
-      Internal links are links to a file in the same directory as the file that is being edited. <a href="blank.html" target="_blank" title="Blank Page">Like this.</a>
+      <div>Internal links are links to a file in the same directory as the file that is being edited. <a href="blank.html" target="_blank" title="Blank Page">Like this.</a></div>
       <div>If you want the link to be on a different line, you can surround the text in div tags.
       <a href="blank.html" target="_blank" title="Blank Page">
-       <div>Like this.</div>
+        <div>Like this.</div>
       </a>
       </div>
       <p>
       External links are links to a file that is not in the same directory. <a href="https://git-scm.com/docs" target="_blank" title="Git References">Like this.</a>
       </p>
-      Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture. Also it should be noted that if you want a link to open in a new page or tab, you must _blank in a target attribute. <img src="target_blank.png" width="111" height="18" alt="Target blank"><!--lecture9-->
+      <div>Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture. Also it should be noted that if you want a link to open in a new page or tab, you must _blank in a target attribute. <img src="target_blank.png" width="111" height="18" alt="Target blank"></div>
  </section>
 
  <section><!--lecture10-->
@@ -123,7 +129,7 @@
         </p>
       <div>
       <img src="puppy.jpg" class="leftmargin40" width="320" height="200" alt="A puppy"> Here's a picture of a puppy.
-      </div><!--lecture10-->
+      </div>
  </section>
  
  <section><!--lecture13 14-->
