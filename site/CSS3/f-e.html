@@ -117,12 +117,12 @@
       <div id=lecture10>Lecture 10: Displaying images</div>
       To display an image you use the 'img' tag.
       <div>
-        <img src="puppyimg.png" width="472" height="56" alt="Image Tag example">
+        <img src="puppyimg.png" class="leftmargin40" width="472" height="56" alt="Image Tag example">
       </div>
       <p>It's an inline tag so as shown above, if you want the image on it's own line you need to contain the image in a blockline tag. I have used 'div' tags as my blockline tags. Below you will see that the text 'Here's a picture of a puppy.' are right next to the image on the same line, and this is proof of the 'img' tag being an inline one.
         </p>
       <div>
-      <img src="puppy.jpg" width="320" height="200" alt="A puppy"> Here's a picture of a puppy.
+      <img src="puppy.jpg" class="leftmargin40" width="320" height="200" alt="A puppy"> Here's a picture of a puppy.
       </div>
  </section>
  
@@ -133,10 +133,10 @@
     </p>
     <div>You can style an ID by writing a pound sign, the name of the ID with no spaces and then write the styles you want in a pair of braces.<img src="ID.png" width="80" height="18" alt="ID"></div>
     <p><div>I have shown the use of using selectors to style my webpage in the stylesheet. For example I gave made all the text on this page Trebuchet MS.</div>
-    <img src="bodyfont.png" width="370" height="70" alt="Body font">  
+    <img src="bodyfont.png" class="leftmargin40" width="370" height="70" alt="Body font">  
     </p>
     <div>You can style several selectors in the same way by separating them with commas. </div>
-    <img src="multipleselectors.png" width="150" height="60" alt="Multiple selectors"> 
+    <img src="multipleselectors.png" class="leftmargin40" width="150" height="60" alt="Multiple selectors"> 
     <p>Selectors can also be combined, they don't have to be used individually. There are 5 different ways to combine selectors that I currently know of. 
     </p>
     <section class=combiningselectors>
@@ -186,7 +186,7 @@
  <section>
     <div id=lecture15>Lecture 15: Pseudo-class selectors</div>
     <div>There are also pseudo-class selectors which work based on the way the user interacts with the webpage. The pseudo-class refers to the current state of particlar content. To use one, you add a semi-colon after the selector and then the pseudo-class. Here are examples of a few:
-    <div><img src="pseudoclassselector.png" width="300" height="54" alt="Pseudo-class selector"></div>
+    <div><img src="pseudoclassselector.png" class="leftmargin40" width="300" height="54" alt="Pseudo-class selector"></div>
     <p>The ':link' one is a link in its natural state before it has been clicked on. ':visited' is a link that has been clicked on before. ':hover' is a link that is being hovered on. ':active' is a link that is being clicked on. ':nth&nbsp;-&nbsp;child(1~/odd/even)' is a particular child within the selector chosen. You can have any number child, or you coud put every even or odd child.</p>
     </div>
  </section>
@@ -233,7 +233,7 @@
     <img src="inheritance.png" class="leftmargin40" width="160" height="80" alt="Inheritance rule">
 
     <br><br>The 'Specificity' rule is that the most specific selector combination will win. To work out the specificity score you used the model below.
-    <img src="specificityscore.png" width="600" height="180" alt="Specificity Score"></div>
+    <img src="specificityscore.png" class="leftmargin40" width="600" height="180" alt="Specificity Score"></div>
     <p>If a &nbsp;&nbsp; style="..." &nbsp;&nbsp; is used, you place a '1' in the thousands box. If you do this any style placed directly in an element tag will win a conflict.</p>
     <p>For every ID used, you must add '1' to the hundreds box.</p>
     <p>For every class, pseudo-class or attribute used you add '1' to the tens box.</p>
@@ -259,7 +259,7 @@
       scroll; always shows a scroll bar.</div>
     </div>
     <div>
-        <img src="boxmodel.png" width="425" height="293" alt="Box model">
+        <img src="boxmodel.png" class="leftmargin40" width="425" height="293" alt="Box model">
     </div>
  </section>
 
@@ -336,7 +336,7 @@
     <br>The 'mediafeature' can be: &nbsp;&nbsp;<span class="html">[min/max]-[width/height]: *px</span>;&nbsp;&nbsp; and the 'logicaloperator' can be &nbsp;&nbsp;<span class="html">and</span>&nbsp;&nbsp; or &nbsp;&nbsp;<span class="html">[,]</span>.
     <div class="notes">Note: 'and' is more commonly used.</div>
     <p>I have actually used media queries on this html page for several sections. You can take a look at the 'Lecture 16 & 18' are to see it in effect. When the device has a large screen, the section is 2 columns, on anything smaller, it is 1 column. Below is a picture of the html I have used:
-    <img class="leftmargin40" src="mediaqueries.png" width="425" height="140" alt="Media Queries"></p>
+    <img src="mediaqueries.png" class="leftmargin40" width="425" height="140" alt="Media Queries"></p>
 
     It is important to make sure that you do not overlap breakpoints. By providing bare styling and then dealing with media queries, you can avoid this.
  </section>
@@ -349,12 +349,11 @@
     <br>
     <div>The most common layout for responsive designs is a 12-column grid. This is because it has many factors.</div>
     <div class="row positioning">
-      <div class="col-lg-6 col-md-6 col-sm-6"><img src="responsivelayout.png" width="100%" alt="Responsive Layout"></div>
-      <div id="abspos" class="notes col-lg-6 col-md-6 col-sm-6">Note: The spaces between each box is the padding.</div>
-      <div class="clearleft"></div>
+      <div><img src="responsivelayout.png" class="leftmargin40" width="500" height="300" alt="Responsive Layout"></div>
+      <div class="notes">Note: The spaces between each box is the padding.</div>
     </div>
     <br>
-    <div>You can add styling that makes everything appear in one column when viewing on smaller screens. However, phones are set by default to zoom out on the browser, so instead of seeing only one column, you may still see move as if you were viewing on a larger screen. To prevent this, you should put &nbsp;&nbsp;<span class="html">name="viewport" content="width=device-width, initial-scale=1"</span>&nbsp;&nbsp; in the meta tag.</div>
+    <div>You can add styling that makes everything appear in one column when viewing on smaller screens. However, phones are set by default to zoom out on the browser, so instead of seeing only one column, you may still see more as if you were viewing on a larger screen. To prevent this, you should put &nbsp;&nbsp;<span class="html">name="viewport" content="width=device-width, initial-scale=1"</span>&nbsp;&nbsp; in the meta tag.</div>
  </section>
 
  <section>

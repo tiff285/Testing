@@ -222,12 +222,6 @@ header	{
 	position: relative;
 }
 
-#abspos 	{
-	position: absolute;
-	bottom: 10px; right: -10px;
-
-}
-
 .center	{
 	text-align: center;
 }
