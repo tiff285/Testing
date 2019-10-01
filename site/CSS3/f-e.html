@@ -223,17 +223,19 @@
         <div>text-align: [center, left, right]</div>
       </div>
 
-      <div class="row smallerfont">
-        <div class="col-lg-6 col-md-12 col-sm-12">'font-family' - You simply put in a few font's that you would like the browser to display. You can type multiple, just incase the browser that is being used doesn't support a particular one.</div>
-        <div class="col-lg-6 col-md-12 col-sm-12">'color' - You put the color that you want. You can type the name of the color, but it is best to you the hex code.</div>
+      <div class="container">
+        <div class="row smallerfont">
+          <div class="col-lg-6 col-md-12 col-sm-12">'font-family' - You simply put in a few font's that you would like the browser to display. You can type multiple, just incase the browser that is being used doesn't support a particular one.</div>
+          <div class="col-lg-6 col-md-12 col-sm-12">'color' - You put the color that you want. You can type the name of the color, but it is best to you the hex code.</div>
         <!--WHAT IS THE ISSUE HERE??? WHY DOES IT NOT STACK PROPERLY-->
-        <div class="col-lg-6 col-md-12 col-sm-12">'font-style' - Type the style. 'initial' means that it will retain the default style. 'inherit' means that it will take the style of the parent tag.</div>
-        <div class="col-lg-6 col-md-12 col-sm-12">'font-weight' - 400 is the same as bold, any numbers entered that are lower or higher will be thinner and thicker respectively. You can also use 'initial' and 'inherit' here.</div>
-        <div class="col-lg-6 col-md-12 col-sm-12">'font-size' - You can use pixels, percentage or em. 'em' is the scaled number to the default font size. If you put 0.5em and the default font size is 12px, it will then become 6px.</div>
-        <div class="col-lg-6 col-md-12 col-sm-12">'text-transform' - Pretty self-explanatory.</div>
-        <div class="col-lg-6 col-md-12 col-sm-12">'text-align' - Again self-explanatory.</div>
+          <div class="col-lg-6 col-md-12 col-sm-12">'font-style' - Type the style. 'initial' means that it will retain the default style. 'inherit' means that it will take the style of the parent tag.</div>
+          <div class="col-lg-6 col-md-12 col-sm-12">'font-weight' - 400 is the same as bold, any numbers entered that are lower or higher will be thinner and thicker respectively. You can also use 'initial' and 'inherit' here.</div>
+          <div class="col-lg-6 col-md-12 col-sm-12">'font-size' - You can use pixels, percentage or em. 'em' is the scaled number to the default font size. If you put 0.5em and the default font size is 12px, it will then become 6px.</div>
+          <div class="col-lg-6 col-md-12 col-sm-12">'text-transform' - Pretty self-explanatory.</div>
+          <div class="col-lg-6 col-md-12 col-sm-12">'text-align' - Again self-explanatory.</div>
+        </div>
       </div>
-      <div class="clearleft"></div>
+        <div class="clearleft"></div>
  </section>
 
 <!--lecture17-->
@@ -336,67 +338,71 @@
 <!--lecture22-->
  <section>
     <div id=lecture22>Lecture 22: Relative and absolute positioning</div>
-    Firstly you must know about static positioning. This is the default positioning for all elements except html. It's basically the regular flow of a document.
+    <div>Firstly you must know about 'static positioning'. This is the default positioning for all elements except html. It's basically the regular flow of a document.</div>
 
-    <div class="underline">Relative positioning</div>
-    Relative positioning is when an element is positioned relative to its position in the the regular document flow. The positioning properties are top, bottom, left and right.
-    It should be noted that when an element is relatively positioned, it is not taken out of the regular document flow. This means that its original position in the document is preserved. As far as other elements are concerned, the element is still in its original position.
-    Look at the effect of the following html:
+    <br><div class="underline">Relative positioning</div>
+    <div>Relative positioning is when an element is positioned relative to its position in the the regular document flow. The positioning properties are top, bottom, left and right.
+    It should be noted that when an element is relatively positioned, it is not taken out of the regular document flow. This means that its original position in the document is preserved. As far as other elements are concerned, the element is still in its original position.</div>
+    <div>Look at the effect of the following html:</div>
     <!--make this two columns-->
-    <img src="relativepositioninghtml.png" class="leftmargin40" width="200" height="240" alt="Relative positioning html">
-    <!--image of the reletaivepositioning--><img src="">
+    </div><img src="relativepositioninghtml.png" class="leftmargin40" width="200" height="240" alt="Relative positioning html"></div>
+    <!--image of the relativepositioning-->
     <!--NORMAL-->
     <!--actual example of doing it with textboxes saying static and relative-->
 
-    Absolute positioning
-    Offsets are relative to the position of its nearest ancestor that does not have static positioning.
-    As mentioned earlier, by default 'html' is the only element that has relative positioning. In absolute positioning, the element is both taken out of the visual and actual document flow. This means that unlike with relative positioning, other elements know that the element is no longer in it's original position.
+    <br><br><div class="underline">Absolute positioning</div>
+    <div>Offsets are relative to the position of its nearest ancestor that does not have static positioning.
+    As mentioned earlier, by default 'html' is the only element that has relative positioning. In absolute positioning, the element is both taken out of the visual and actual document flow. This means that unlike with relative positioning, other elements know that the element is no longer in it's original position.</div>
  </section>
 
- <section><!--lecture23-->
+<!--lecture23-->
+ <section>
     <div id=lecture23>Lecture 23: Media queries</div>
-    Adjusting the way things appear on the screen depending on the size of the device.
+    <div>Adjusting the way things appear on the screen depending on the size of the device.</div>
     <div class="html">@media (mediafeature)  {</div>
     <div class="html">@media (mediafeature) logical operator (mediafeature)   {</div>
 
-    <br>The 'mediafeature' can be: &nbsp;&nbsp;<span class="html">[min/max]-[width/height]: *px</span>;&nbsp;&nbsp; and the 'logicaloperator' can be &nbsp;&nbsp;<span class="html">and</span>&nbsp;&nbsp; or &nbsp;&nbsp;<span class="html">[,]</span>.
+    <br>The 'mediafeature' can be: &nbsp;&nbsp;<span class="html">([min/max]-[width/height]: *px</span>)&nbsp;&nbsp; and the 'logicaloperator' can be &nbsp;&nbsp;<span class="html">and</span>&nbsp;&nbsp; or &nbsp;&nbsp;<span class="html">[,]</span>.
     <div class="notes">Note: 'and' is more commonly used.</div>
-    <p>I have actually used media queries on this html page for several sections. You can take a look at the 'Lecture 16 & 18' are to see it in effect. When the device has a large screen, the section is 2 columns, on anything smaller, it is 1 column. Below is a picture of the html I have used:
+
+    <p>I have actually used media queries on this html page for several sections. You can take a look at the 'Lecture 16 & 18' are to see it in effect. When the device has a large screen, the section is 2 columns, on anything smaller, it is 1 column. Below is a picture of the html I have used for it:
     <img src="mediaqueries.png" class="leftmargin40" width="425" height="140" alt="Media Queries"></p>
 
-    It is important to make sure that you do not overlap breakpoints. By providing bare styling and then dealing with media queries, you can avoid this.<!--lecture23-->
+    It is important to make sure that you do not overlap breakpoints. By providing bare styling and then dealing with media queries, you can avoid this.
  </section>
 
- <section><!--lecture24-->
+<!--lecture24-->
+ <section>
     <div id=lecture24>Lecture 24: Responsive design</div>
     <div>A responsive site is a site that's designed to change its layout by using fluid proportion-based grids, flexible images and CSS3 media queries. This basically means tht it adapts to the size of the displaying device. The visual delivery itself may even change.</div>
-    <br>
-    <div>The alternative to responsive design are servers that detect whether a mobile or laptop/PC is being used. The issue with this is that you end up sacrificing user experience because you are trying to find one mobile version that fits all, when mobile devices have many variations.</div>
-    <br>
-    <div>The most common layout for responsive designs is a 12-column grid. This is because it has many factors.</div>
-    <div class="row positioning">
+
+    <br><div>The alternative to responsive design are servers that detect whether a mobile or laptop/PC is being used. The issue with this is that you end up sacrificing user experience because you are trying to find one mobile version that fits all, when mobile devices have many variations.</div>
+
+    <br><div>The most common layout for responsive designs is a 12-column grid. This is because it has many factors.</div>
+
+    <div class="row">
       <div><img src="responsivelayout.png" class="leftmargin40" width="500" height="300" alt="Responsive Layout"></div>
-      <div class="notes">Note: The spaces between each box is the padding.</div>
+      <div class="notes leftmargin40">Note: The spaces between each box is the padding.</div>
     </div>
-    <br>
-    <div>You can add styling that makes everything appear in one column when viewing on smaller screens. However, phones are set by default to zoom out on the browser, so instead of seeing only one column, you may still see more as if you were viewing on a larger screen. To prevent this, you should put &nbsp;&nbsp;<span class="html">name="viewport" content="width=device-width, initial-scale=1"</span>&nbsp;&nbsp; in the meta tag.</div>
-    <div>If you do this the browser will consider the 'device width' as tge width of the viewport. The initial scale factor will be '1" meaning it won't scale anything down.</div>
+
+    <br><div>You can add styling that makes everything appear in one column when viewing on smaller screens. However, phones are set by default to zoom out on the browser, so instead of seeing only one column, you may still see more as if you were viewing on a larger screen. To prevent this, you should put &nbsp;&nbsp;<span class="html">name="viewport" content="width=device-width, initial-scale=1"</span>&nbsp;&nbsp; in the meta tag. If you do this the browser will consider the 'device width' as the width of the viewport. The initial scale factor will be '1" meaning it won't scale anything down.</div>
  </section>
 
- <section><!--lecture25-->
+<!--lecture25-->
+ <section>
     <div id=lecture25>Lectures 25 & 26: Twitter Bootstrap</div>
     Twitter Bootstrap is the most popular HTML, CSS and Javascript for developing responsive mobile first projects on the web.
-    <!--Note-->Mobile first has two meanings:
-    <!--morenotes-->1) You code for mobile first.
-    2) You code with desktop version, but plan for mobile version.
+    <div class="notes">Mobile first has two meanings:</div>
+    <div class="morenotes">1) You code for mobile first.</div>
+    <div class="morenotes">2) You code with desktop version, but plan for mobile version.</div>
 
-    Bootstrap class names are typically written in the &nbsp;&nbsp;<!--html-->col-[size]-[span]&nbsp;&nbsp; fashion. The 'size' can be 'lg', 'md', 'sm' and 'xs'. Columns will collapse unless they are specified. 
-    The 'span' is the number of columns wide that the section is. This will be a number from 1~12.
+    <p>Bootstrap class names are typically written in the &nbsp;&nbsp;<!--html-->col-[size]-[span]&nbsp;&nbsp; fashion. The 'size' can be 'lg', 'md', 'sm' and 'xs'. Columns will collapse unless they are specified. 
+    The 'span' is the number of columns wide that the section is. This will be a number from 1~12.</p>
 
-    If you would like a layout to always stay the same, its best to use &nbsp;&nbsp;<!--html-->col-xs-[span].
+    <div>If you would like a layout to always stay the same, its best to use &nbsp;&nbsp;<!--html--><span class="html">col-xs-[span]</span>.</div>
 
     The structure for a grid-based layout must be the following:
-    <!--leftmargin40--><!--image of bootstrapstructure--><!--lecture24-->
+    <div><img src="bootstrapstructure.png" class="leftmargin40" width="230" height="140" align="Bootstrap structure"></div>
  </section>
 
 
