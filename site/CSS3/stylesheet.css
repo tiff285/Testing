@@ -11,8 +11,9 @@
 body	{
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: #bcd7d2;
-	max-width: 1400px;
 	margin: auto;
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
 header	{	
@@ -194,8 +195,13 @@ header	{
 }
 
 .leftmargin40	{
-	margin-left: 40px
+	margin-left: 40px;
 }
+
+.noleftmargin	{
+	margin-left: 0px;
+}
+
 .underline	{
 	text-decoration: underline;
 }
