@@ -183,47 +183,6 @@ header	{
 /************************ OTHER STYLES ************************/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Simple styling */
 .notes	{
 	font-size: 12px;
@@ -307,6 +266,7 @@ header nav a:hover, header nav a:active	{
 
 nav	{
 	height: 144px;
+	width: 98%;
 	overflow: auto;
 	scroll-behavior: smooth;
 }
