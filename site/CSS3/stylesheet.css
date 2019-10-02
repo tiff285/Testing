@@ -17,7 +17,6 @@ body	{
 }
 
 header	{	
-	list-style: none;
 	text-align: center;
 }
 
@@ -183,237 +182,286 @@ header	{
 /************************ OTHER STYLES ************************/
 
 
-/* Simple styling */
-.notes	{
-	font-size: 12px;
-	color: #808080;
+	/* Simple styling */
+		.notes	{
+			font-size: 12px;
+			color: #808080;
+		}
+
+		.morenotes	{
+			font-size: 12px;
+			color: #808080;
+			margin-left: 32px;
+		}
+
+		.leftmargin40	{
+			margin-left: 40px;
+		}
+
+		.noleftmargin	{
+			margin-left: 0px;
+		}
+
+		.underline	{
+			text-decoration: underline;
+		}
+
+		.html	{
+			font-family: courier new;
+			font-size: 102%;
+		}
+
+		.doublelineheight 	{
+			line-height: 2em;
+		}
+
+		.smallerfont	{
+			font-size: 80%;
+		}
+
+		.floatleft	{
+			float: left;
+			margin-left: 50px;
+		}
+
+		.center	{
+			text-align: center;
+		}
+
+		.margintop0	{
+			margin-top: 0px;
+		}
+
+		.margintop20	{
+			margin-top: 20px;
+		}
+
+		.marginbottom0	{
+			margin-bottom: 0px;
+		}
+
+	/* Specific section styling */
+.dropbtn {
+color: #FFFFFF;
+background-color: #808080;
+display: block;
+width: 40%;
+text-align: center;
+padding-top: 5px;
+padding-bottom: 5px;
+font-size: 12px;
+border: 1px solid #545454;
+margin: auto;
 }
 
-.morenotes	{
-	font-size: 12px;
-	color: #808080;
-	margin-left: 32px;
+.dropdown  {
+	position: relative;
+	display: block;
+	margin: auto;
 }
 
-.leftmargin40	{
-	margin-left: 40px;
-}
-
-.noleftmargin	{
-	margin-left: 0px;
-}
-
-.underline	{
-	text-decoration: underline;
-}
-
-.html	{
-	font-family: courier new;
-	font-size: 102%;
-}
-
-.doublelineheight 	{
-	line-height: 2em;
-}
-
-.smallerfont	{
-	font-size: 80%;
-}
-
-.floatleft	{
-	float: left;
-	margin-left: 50px;
-}
-
-.center	{
-	text-align: center;
-}
-
-.margintop0	{
-	margin-top: 0px;
-}
-
-.margintop20	{
-	margin-top: 20px;
-}
-
-.marginbottom0	{
-	margin-bottom: 0px;
-}
-
-/* Specific section styling */
-header nav a:link, header nav a:visited	{
+.dropdown-content {
 	color: #FFFFFF;
-	font-size: 12px;
-	text-decoration: none;
-	text-align: center;
 	background-color: #808080;
-	border: 1px solid #545454;
-	display: inline-block;
-	width: 98%;
-}
-
-header nav a:hover, header nav a:active	{
-	color: #FFFFFF;
-	font-size: 12px;
-	text-decoration: none;
 	text-align: center;
-	background-color: #545454;
+	display: none;
+	font-size: 12px;
 	border: 1px solid #808080;
-	display: inline-block;
-	width: 98%;
-}
-
-nav	{
-	height: 144px;
-	width: 98%;
 	overflow: auto;
+	height: 100px;
+	width: 40%;
 	scroll-behavior: smooth;
+	margin: auto;
 }
 
-a:link, a:visited	{
-	color: #000000;
-}
-
-a:hover, a:active 	{
-	color: #808080;
-}
-
-section > div:nth-child(1)	{
-	font-size: 20px;
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-section	{
-	margin-bottom: 60px;
-}
-
-section > section	{
-	margin-bottom: 0px;
-}
-
-ul, ol {
-	margin-top: 0px;
-	margin-left: 20px;
-	padding-left: 10px;
-}
-
-.combiningselectors > div	{
-	float: left;
-	font-size: 100%;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-bottom: 10px;
-	border-width: 1px;
-	border-style: solid;
-	padding: 10px;
-	border-color: #808080;
-	width: 320px;
-	height: 300px;
-	font-weight: 0;
-}
-
-.lecture21floating	{
-	border-style: solid;
-	border-color: #000000;
-	border-width: 1px;
-	width: 70px;
-	height: 70px;
-	background-color: #F5E1FC;
-	margin-right: 20px;
-	margin-bottom: 1px;
-	float: left;
-}
-
-.background1	{
-	background-image: url('nugget.jpg');
-	background-repeat: no-repeat;
-	height: 200px;
-	margin-left: 1px;
-	margin-bottom: 1px;
-	border: solid;
-	border-width: 1px;
-	border-color: #000000;
-}
-
-.background2	{
-	background-image: url('nugget.jpg');
-	background-repeat: 	repeat;
-	height: 200px;
-	margin-left: 1px;
-	margin-bottom: 1px;
-	border: solid;
-	border-width: 1px;
-	border-color: #000000;
-}
-
-.background3	{
-	background-image: url('nugget.jpg');
-	background-repeat: 	repeat-x;
-	height: 200px;
-	margin-left: 1px;
-	margin-bottom: 1px;
-	border: solid;
-	border-width: 1px;
-	border-color: #000000;
-}
-
-.background4	{
-	background-image: url('nugget.jpg');
-	background-repeat: 	repeat-y;
-	height: 200px;
-	margin-left: 1px;
-	margin-bottom: 1px;
-	border: solid;
-	border-width: 1px;
-	border-color: #000000;
-}
-
-.background5	{
-	background-image: url('nugget.jpg');
-	background-repeat: 	space;
-	height: 200px;
-	margin-left: 1px;
-	margin-bottom: 1px;
-	border: solid;
-	border-width: 1px;
-	border-color: #000000;
-}
-
-.background6	{
-	background-image: url('nugget.jpg');
-	background-repeat: 	round;
-	height: 200px;
-	margin-left: 1px;
-	margin-bottom: 1px;
-	border: solid;
-	border-width: 1px;
-	border-color: #000000;
-}
-
-#backtotop {
-	font-size: 12px;
+.dropdown-content a {
 	color: #FFFFFF;
 	text-decoration: none;
-	background-color: #808080;
-	border: 1px solid #545454;
-	display: inline-block;
-	width: 70px;
-	text-align: center;
-}
-
-#backtotop:hover	{
-	font-size: 12px;
-	color: #FFFFFF;
-	background-color: #545454;
+	display: block;
+	width: 98%;
 	border: 1px solid #808080;
-	display: inline-block;
-	width: 70px;
-	text-align: center;
+	margin: auto;
 }
 
-#lecturestatus	{
-	text-align: right;
-	font-size: 10px;
+.dropdown-content a:hover {
+	color: #000000;
+	display: block;
+    background-color: #545454;
+    border: 1px solid #808080;
+    width: 40%;
+    margin: auto;
 }
+
+.dropdown:hover .dropdown-content {
+	display: block;
+    border: 1px solid #808080;
+    margin: auto;
+    }
+
+
+}
+
+.dropdown-content a {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	width: 40%;
+	border: 1px solid #808080;
+	margin: auto;
+}
+
+.dropdown-content a:hover {
+	color: #000000;
+	display: block;
+    background-color: #545454;
+    border: 1px solid #808080;
+    width: 99%;
+    margin: auto;
+}
+
+		a:link, a:visited	{
+			color: #000000;
+		}
+
+		a:hover, a:active 	{
+			color: #808080;
+		}
+
+		section > div:nth-child(1)	{
+			font-size: 20px;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		section	{
+			margin-bottom: 60px;
+		}
+
+		section > section	{
+			margin-bottom: 0px;
+		}
+
+		ul, ol {
+			margin-top: 0px;
+			margin-left: 20px;
+			padding-left: 10px;
+		}
+
+		.combiningselectors > div	{
+			float: left;
+			font-size: 100%;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-bottom: 10px;
+			border-width: 1px;
+			border-style: solid;
+			padding: 10px;
+			border-color: #808080;
+			width: 320px;
+			height: 300px;
+			font-weight: 0;
+		}
+
+		.lecture21floating	{
+			border-style: solid;
+			border-color: #000000;
+			border-width: 1px;
+			width: 70px;
+			height: 70px;
+			background-color: #F5E1FC;
+			margin-right: 20px;
+			margin-bottom: 1px;
+			float: left;
+		}
+
+		.background1	{
+			background-image: url('nugget.jpg');
+			background-repeat: no-repeat;
+			height: 200px;
+			margin-left: 1px;
+			margin-bottom: 1px;
+			border: solid;
+			border-width: 1px;
+			border-color: #000000;
+		}
+
+		.background2	{
+			background-image: url('nugget.jpg');
+			background-repeat: 	repeat;
+			height: 200px;
+			margin-left: 1px;
+			margin-bottom: 1px;
+			border: solid;
+			border-width: 1px;
+			border-color: #000000;
+		}
+
+		.background3	{
+			background-image: url('nugget.jpg');
+			background-repeat: 	repeat-x;
+			height: 200px;
+			margin-left: 1px;
+			margin-bottom: 1px;
+			border: solid;
+			border-width: 1px;
+			border-color: #000000;
+		}
+
+		.background4	{
+			background-image: url('nugget.jpg');
+			background-repeat: 	repeat-y;
+			height: 200px;
+			margin-left: 1px;
+			margin-bottom: 1px;
+			border: solid;
+			border-width: 1px;
+			border-color: #000000;
+		}
+
+		.background5	{
+			background-image: url('nugget.jpg');
+			background-repeat: 	space;
+			height: 200px;
+			margin-left: 1px;
+			margin-bottom: 1px;
+			border: solid;
+			border-width: 1px;
+			border-color: #000000;
+		}
+
+		.background6	{
+			background-image: url('nugget.jpg');
+			background-repeat: 	round;
+			height: 200px;
+			margin-left: 1px;
+			margin-bottom: 1px;
+			border: solid;
+			border-width: 1px;
+			border-color: #000000;
+		}
+
+		#backtotop {
+			font-size: 12px;
+			color: #FFFFFF;
+			text-decoration: none;
+			background-color: #808080;
+			border: 1px solid #545454;
+			display: inline-block;
+			width: 70px;
+			text-align: center;
+		}
+
+		#backtotop:hover	{
+			font-size: 12px;
+			color: #FFFFFF;
+			background-color: #545454;
+			border: 1px solid #808080;
+			display: inline-block;
+			width: 70px;
+			text-align: center;
+		}
+
+		#lecturestatus	{
+			text-align: right;
+			font-size: 10px;
+		}
