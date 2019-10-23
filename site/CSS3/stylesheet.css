@@ -250,7 +250,7 @@
 
 	/* SPECIFIC SECTION STYLING */
 
-		/*Dropdown navigation bar*/
+		/* Dropdown navigation bar */
 			
 			.dropdown  {
 				display: block;
@@ -321,7 +321,7 @@
 			    width: 99%;
 			}
 
-		/*Others*/
+		/* Others */
 			a:link, a:visited	{
 				color: #000000;
 			}
