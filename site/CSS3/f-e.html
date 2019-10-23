@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Testing page: Front-end</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <header>
 <!--Navigation bar-->
@@ -111,31 +112,30 @@
  </section>
 
 <!--lecture9-->
- <section>
-      <div id=lecture9>Lecture 9: Creating links</div>
-      <div>Internal links are links to a file in the same directory as the file that is being edited. <a href="blank.html" target="_blank" title="Blank Page">Like this.</a></div>
-      <div>If you want the link to be on a different line, you can surround the text in div tags.
-      <a href="blank.html" target="_blank" title="Blank Page">
-        <div>Like this.</div>
-      </a>
-      </div>
+    <section>
+        <div id=lecture9>Lecture 9: Creating links</div>
+        <div>Internal links are links to a file in the same directory as the file that is being edited. <a href="blank.html" target="_blank" title="Blank Page">Like this.</a></div>
+        <div>If you want the link to be on a different line, you can surround the text in div tags.
+        <a href="blank.html" target="_blank" title="Blank Page">
+            <div>Like this.</div>
+        </a>
+        </div>
 
-      <p>
-      External links are links to a file that is not in the same directory. <a href="https://git-scm.com/docs" target="_blank" title="Git References">Like this.</a></p>
+        <p>External links are links to a file that is not in the same directory. <a href="https://git-scm.com/docs" target="_blank" title="Git References">Like this.</a></p>
 
-      <div>Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture. Also it should be noted that if you want a link to open in a new page or tab, you must _blank in a target attribute. <img src="target_blank.png" width="111" height="18" alt="Target blank"></div>
- </section>
+        <div>Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture. Also it should be noted that if you want a link to open in a new page or tab, you must _blank in a target attribute. <img src="target_blank.png" width="111" height="18" alt="Target blank"></div>
+    </section>
 
 <!--lecture10-->
- <section>
-    <div id=lecture10>Lecture 10: Displaying images</div>
-    To display an image you use the 'img' tag.
-    <div><img src="puppyimg.png" class="leftmargin40" width="472" height="56" alt="Image Tag example"></div>
+    <section>
+        <div id=lecture10>Lecture 10: Displaying images</div>
+        <div>To display an image you use the 'img' tag.</div>
+        <div><img src="puppyimg.png" class="leftmargin40" width="472" height="56" alt="Image Tag example"></div>
 
-    <p>It's an inline tag so as shown above, if you want the image on it's own line you need to contain the image in a blockline tag. I have used 'div' tags as my blockline tags. Below you will see that the text 'Here's a picture of a puppy.' are right next to the image on the same line, and this is proof of the 'img' tag being an inline one.</p>
+        <p>It's an inline tag so as shown above, if you want the image on it's own line you need to contain the image in a blockline tag. I have used 'div' tags as my blockline tags. Below you will see that the text 'Here's a picture of a puppy.' are right next to the image on the same line, and this is proof of the 'img' tag being an inline one.</p>
 
-    <div><img src="puppy.jpg" class="leftmargin40" width="320" height="200" alt="A puppy"> Here's a picture of a puppy.</div>
- </section>
+        <div><img src="puppy.jpg" class="leftmargin40" width="320" height="200" alt="A puppy"> Here's a picture of a puppy.</div>
+    </section>
 
 <!--lecture13 14--> 
  <section>
@@ -227,7 +227,7 @@
         <div>text-align: [center, left, right]</div>
       </div>
 
-      <div class="container">
+      <div class="container-fluid">
         <div class="row smallerfont">
           <div class="col-lg-6 col-md-12 col-sm-12">'font-family' - You simply put in a few font's that you would like the browser to display. You can type multiple, just incase the browser that is being used doesn't support a particular one.</div>
           <div class="col-lg-6 col-md-12 col-sm-12">'color' - You put the color that you want. You can type the name of the color, but it is best to you the hex code.</div>
@@ -239,7 +239,7 @@
           <div class="col-lg-6 col-md-12 col-sm-12">'text-align' - Again self-explanatory.</div>
         </div>
       </div>
-        <div class="clearleft"></div>
+    <div class="clearleft"></div>
  </section>
 
 <!--lecture17-->
@@ -308,15 +308,17 @@
     <br>All these background properties can be specified under just <span class="html">&nbsp;&nbsp;background: [...]</span>,&nbsp;&nbsp; but doing so will make the priority work in a consequential fashion. This means that if you have an image and a color, the later mentioned on will override all previous properties unless it's respecified in <span class="html">background: [...]</span>.
     <p>Below are examples of each background property style that you can have. They are in the following order 'no-repeat', 'repeat, 'repeat-x', 'repeat-y', 'space' and 'round'.</p>
     <!--I need to figure out a way to give each section a title that is not in the contained box, but is always positioned at the top of each box, that way I can give each box a header-->
-    <div class="row">
-      <div class="background1 col-lg-2 col-md-4 col-sm-6"></div>
-      <div class="background2 col-lg-2 col-md-4 col-sm-6"></div>
-      <div class="background3 col-lg-2 col-md-4 col-sm-6"></div>
-      <div class="background4 col-lg-2 col-md-4 col-sm-6"></div>
-      <div class="background5 col-lg-2 col-md-4 col-sm-6"></div>
-      <div class="background6 col-lg-2 col-md-4 col-sm-6"></div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="background1 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">Hello</span></div>
+          <div class="background2 col-lg-2 col-md-4 col-sm-6"></div>
+          <div class="background3 col-lg-2 col-md-4 col-sm-6"></div>
+          <div class="background4 col-lg-2 col-md-4 col-sm-6"></div>
+          <div class="background5 col-lg-2 col-md-4 col-sm-6"></div>
+          <div class="background6 col-lg-2 col-md-4 col-sm-6"></div>
+          <div class="clearleft"></div>
+        </div>
     </div>
-    <div class="clearleft"></div>
  </section>
 
 <!--lecture21-->
