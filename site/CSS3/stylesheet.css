@@ -222,6 +222,10 @@
 			margin-left: 50px;
 		}
 
+		.clearboth{
+			clear: both;
+		}
+
 		.center	{
 			text-align: center;
 		}
@@ -252,73 +256,58 @@
 
 		/* Dropdown navigation bar */
 			
-			.dropdown  {
-				display: block;
-				position: relative;
-			}
-
 			.dropbtn {
-				color: #FFFFFF;
-				background-color: #808080;
-				display: block;
-				margin: auto;
-				width: 40%;
-				padding-top: 5px;
-				padding-bottom: 5px;
-				font-size: 12px;
-				border: 1px solid #545454;
-				position: relative;
+  				background-color: #808080;
+  				color: #FFFFFF;
+  				display: block;
+  				width: 40%;
+  				text-align: center;
+  				padding-top: 5px;
+  				padding-bottom: 5px;
+  				font-size: 12px;
+  				border: 1px solid #545454;
+  				margin: auto
 			}
-
+			
 			.dropdown-content {
 				color: #FFFFFF;
 				background-color: #808080;
+				text-align: center;
 				display: none;
 				font-size: 12px;
-				border: 1px solid #545454;
+				border: 1px solid #808080;
 				overflow: auto;
 				height: 100px;
 				width: 40%;
 				scroll-behavior: smooth;
-				position: relative;
+				position: absolute;
+				z-index: 1;
+				margin: auto;
 			}
-
+			
 			.dropdown-content a {
 				color: #FFFFFF;
 				text-decoration: none;
 				display: block;
-				width: 99%;
+				width: 98%;
 				border: 1px solid #808080;
+				margin: auto;
 			}
-
-			.dropdown-content a:hover {
-				color: #000000;
-				display: inline-block;
-			    background-color: #545454;
-			    border: 1px solid #545454;
-			    width: 40%;
-			}
-
+			
 			.dropdown:hover .dropdown-content {
-				display: inline-block;
-			    border: 1px solid #545454;
-			    }
-			}
-
-			.dropdown-content a {
-				color: #FFFFFF;
-				text-decoration: none;
 				display: block;
-				width: 40%;
+				position: relative;
 				border: 1px solid #808080;
+				margin: auto;
 			}
-
+			
 			.dropdown-content a:hover {
 				color: #000000;
 				display: block;
-			    background-color: #545454;
-			    border: 1px solid #808080;
-			    width: 99%;
+				background-color: #545454;
+				border: 1px solid #808080;
+				width: 99%;
+				margin: auto;
 			}
 
 		/* Others */
@@ -327,7 +316,7 @@
 			}
 
 			a:hover, a:active 	{
-				color: #808080;
+				color: #4CC3BD;
 			}
 
 			section > div:nth-child(1)	{

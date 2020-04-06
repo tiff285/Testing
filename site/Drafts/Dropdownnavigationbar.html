@@ -32,20 +32,16 @@ header	{
 .dropbtn {
   color: #FFFFFF;
   background-color: #808080;
-  display: block;
+  display: inline-block;
   width: 40%;
+  position: relative;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 12px;
   border: 1px solid #545454;
   margin: auto
-}
-
-.dropdown  {
-  position: relative;
-  display: block;
-  margin: auto;
+  ;
 }
 
 .dropdown-content {
@@ -57,7 +53,6 @@ header	{
   border: 1px solid #808080;
   overflow: auto;
   height: 100px;
-  width: 40%;
   scroll-behavior: smooth;
   position: absolute;
   z-index: 1;
@@ -73,40 +68,20 @@ header	{
   margin: auto;
 }
 
-.dropdown-content a:hover {
-	color: #000000;
-	display: block;
-    background-color: #545454;
-    border: 1px solid #808080;
-    width: 40%;
-    margin: auto;
-}
-
 .dropdown:hover .dropdown-content {
 	display: block;
-    border: 1px solid #808080;
-    margin: auto;
-    }
-
-
-}
-
-.dropdown-content a {
-  color: #FFFFFF;
-  text-decoration: none;
-  display: block;
-  width: 40%;
   border: 1px solid #808080;
   margin: auto;
+  z-index: 1;
 }
 
 .dropdown-content a:hover {
 	color: #000000;
 	display: block;
-    background-color: #545454;
-    border: 1px solid #808080;
-    width: 99%;
-    margin: auto;
+  background-color: #545454;
+  border: 1px solid #808080;
+  width: 99%;
+  margin: auto;
 }
 
 
@@ -136,7 +111,34 @@ header	{
     </div>
 
 </header>
+
+
+
+</header> <br>
+ <br>
+
+
 <body>
+    <!--lecture1-->
+ <section class="clearboth">
+   <div id=lecture1>Lecture 1: Pop-ups</div>
+   <div>To add an alert when you click on particular content, you have to add the onclick attribute to the tag for the contnent and then put alert, and your mesage in quotes within parentheses. Like this.<img src="alert.png" width="238" height="18" alt="Alert"></div>
+   <div onclick="alert('IT WORKS');">When you click on this sentence, an alert will appear confirming it works.</div>
+ </section>
+
+<!--lecture6-->
+ <section>
+   <div id=lecture6>Lecture 6: Different headers</div><!--Adjust to bootstrap columns-->
+   <div class="notes">When the h1 and h2 tag are siblings of the same tag, they are the same size.</div>
+   <h1 class="floatleft">h1</h1>
+   <h2 class="floatleft">h2</h2>
+   <h3 class="floatleft">h3</h3>
+   <h4 class="floatleft">h4</h4>
+   <h5 class="floatleft">h5</h5>
+   <h6 class="floatleft">h6</h6>
+   <div class="clearleft"></div>
+ </section>
+
 
 </body>
 </html>
