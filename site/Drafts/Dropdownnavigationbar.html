@@ -27,12 +27,14 @@ header	{
 	margin: auto;
 }
 
-
+.dropdown {
+  position: relative;
+}
 
 .dropbtn {
   color: #FFFFFF;
   background-color: #808080;
-  display: inline-block;
+  display: block;
   width: 40%;
   position: relative;
   text-align: center;
@@ -40,7 +42,6 @@ header	{
   padding-bottom: 5px;
   font-size: 12px;
   border: 1px solid #545454;
-  margin: auto
   ;
 }
 
@@ -55,8 +56,6 @@ header	{
   height: 100px;
   scroll-behavior: smooth;
   position: absolute;
-  z-index: 1;
-  margin: auto;
 }
 
 .dropdown-content a {
@@ -65,13 +64,11 @@ header	{
   display: block;
   width: 98%;
   border: 1px solid #808080;
-  margin: auto;
 }
 
 .dropdown:hover .dropdown-content {
-	display: block;
+  display: block;
   border: 1px solid #808080;
-  margin: auto;
   width: 40%;
   z-index: 1;
 }
@@ -82,14 +79,13 @@ header	{
   background-color: #545454;
   border: 1px solid #808080;
   width: 99%;
-  margin: auto;
 }
 
 
 	</style>
 
     <div class="dropdown">
-      <div class="dropbtn">Navigation bar</div>
+      <button class="dropbtn">Navigation bar</button>
       <div class="dropdown-content">
         <a href="#lecture1">Lecture 1: Pop-ups</a>
         <a href="#lecture6">Lecture 6: Different headers</a>
