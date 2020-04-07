@@ -397,7 +397,7 @@
 			}
 
 			.background1	{
-				background-image: url('nugget.jpg');
+				background-image: url('tiff.png');
 				background-repeat: no-repeat;
 				height: 200px;
 				margin-bottom: 1px;
@@ -408,7 +408,7 @@
 			}
 
 			.background2	{
-				background-image: url('nugget.jpg');
+				background-image: url('tiff.png');
 				background-repeat: 	repeat;
 				height: 200px;
 				margin-bottom: 1px;
@@ -418,7 +418,7 @@
 			}
 
 			.background3	{
-				background-image: url('nugget.jpg');
+				background-image: url('tiff.png');
 				background-repeat: 	repeat-x;
 				height: 200px;
 				margin-bottom: 1px;
@@ -428,7 +428,7 @@
 			}
 
 			.background4	{
-				background-image: url('nugget.jpg');
+				background-image: url('tiff.png');
 				background-repeat: 	repeat-y;
 				height: 200px;
 				margin-bottom: 1px;
@@ -438,7 +438,7 @@
 			}
 
 			.background5	{
-				background-image: url('nugget.jpg');
+				background-image: url('tiff.png');
 				background-repeat: 	space;
 				height: 200px;
 				margin-bottom: 1px;
@@ -448,7 +448,7 @@
 			}
 
 			.background6	{
-				background-image: url('nugget.jpg');
+				background-image: url('tiff.png');
 				background-repeat: 	round;
 				height: 200px;
 				margin-bottom: 1px;

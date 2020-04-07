@@ -13,7 +13,8 @@
 
 
 <body>
-    <!--Navigation bar-->
+
+<!--Navigation bar-->
   <div class="dropdown">
       <span class="dropbtn">Navigation bar</span>
       <div class="dropdown-content">
@@ -37,13 +38,10 @@
     </div> 
   </div>
 
+<!--Back to top button-->
  <p>
    <a id=backtotop href="#top" title="Back to top">Back to top</a>
  </p>
-
-
- <br>
- <br>
 
 <!--lecture1-->
  <section>
@@ -261,8 +259,8 @@
     <div>For example in the following html below, if the div tag was styled, the span tags would have the same style because they are children of the div tag:</div>
     <img src="inheritance.png" class="leftmargin40" width="160" height="80" alt="Inheritance rule">
 
-    <p>The 'Specificity' rule is that the most specific selector combination will win. To work out the specificity score you used the model below.
-    <img src="specificityscore.png" class="leftmargin40" width="600" height="180" alt="Specificity Score"></p>
+    <p>The 'Specificity' rule is that the most specific selector combination will win. To work out the specificity score you used the model as pictured.
+    <br><img src="specificityscore.png" class="leftmargin40" width="400" height="120" alt="Specificity Score"></p>
 
     <p>If a &nbsp;&nbsp; <span class="html">style="..."</span> &nbsp;&nbsp; is used, you place a '1' in the thousands box. If you do this any style placed directly in an element tag will win a conflict.</p>
 
@@ -315,15 +313,15 @@
     <div class="html leftmargin40">background-position: [top, right, bottom, left]</div>
     <br>All these background properties can be specified under just <span class="html">&nbsp;&nbsp;background: [...]</span>,&nbsp;&nbsp; but doing so will make the priority work in a consequential fashion. This means that if you have an image and a color, the later mentioned on will override all previous properties unless it's respecified in <span class="html">background: [...]</span>.
     <p>Below are examples of each background property style that you can have. They are in the following order 'no-repeat', 'repeat, 'repeat-x', 'repeat-y', 'space' and 'round'.</p>
-    <!--I need to figure out a way to give each section a title that is not in the contained box, but is always positioned at the top of each box, that way I can give each box a header-->
+    
     <div class="container-fluid">
         <div class="row">
-          <div class="background1 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">Hello</span></div>
-          <div class="background2 col-lg-2 col-md-4 col-sm-6"></div>
-          <div class="background3 col-lg-2 col-md-4 col-sm-6"></div>
-          <div class="background4 col-lg-2 col-md-4 col-sm-6"></div>
-          <div class="background5 col-lg-2 col-md-4 col-sm-6"></div>
-          <div class="background6 col-lg-2 col-md-4 col-sm-6"></div>
+          <div class="background1 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">no-repeat</span></div>
+          <div class="background2 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">repeat</span></div>
+          <div class="background3 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">repeat-x</span></div>
+          <div class="background4 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">repeat-y</span></div>
+          <div class="background5 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">space</span></div>
+          <div class="background6 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">round</span></div>
           <div class="clearleft"></div>
         </div>
     </div>
