@@ -13,12 +13,12 @@
 		margin-bottom: 20px;
 	}
 
-	.relative .absolute {
-		width: 400px;
-		height: 300px;
+	.desktop {
 		border-style: solid;
 		border-color: #000000;
 		border-width: 1px;
+		width: 400px;
+		height: 300px;
 	}
 
 /* Relative positioning */
