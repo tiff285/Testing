@@ -2,146 +2,140 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-	<title>Testing page: Front-end</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title>Notes: Front-end</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-<header>
-   
-</header>
-
-
 
 <body>
 
-<!--Navigation bar-->
+<!-- Navigation bar -->
   <div class="dropdown">
-      <span class="dropbtn">Navigation bar</span>
-      <div class="dropdown-content">
-        <a href="#lecture1">Lecture 1: Pop-ups</a>
-        <a href="#lecture6">Lecture 6: Different headers</a>
-        <a href="#lecture7">Lecture 7: Lists</a>
-        <a href="#lecture8">Lecture 8: Character entity references</a>
-        <a href="#lecture9">Lecture 9: Creating links</a>
-        <a href="#lecture10">Lecture 10: Displaying images</a>
-        <a href="#lecture13">Lectures 13 & 14: Element, class and ID selectors</a>
-        <a href="#lecture15">Lecture 15: Pseudo-class selectors</a>
-        <a href="#lecture16">Lectures 16 & 18: Style placement & styling text</a>
-        <a href="#lecture17">Lecture 17: Conflict resolution</a>
-        <a href="#lecture19">Lecture 19: The box model</a>
-        <a href="#lecture20">Lecture 20: The background property</a>
-        <a href="#lecture21">Lecture 21: Floating</a>
-        <a href="#lecture22">Lecture 22: Relative and absolute positioning</a>
-        <a href="#lecture23">Lecture 23: Media queries</a>
-        <a href="#lecture24">Lecture 24: Responsive design</a>
-        <a href="#lecture25">Lectures 25 & 26: Twitter Bootstrap</a>         
-    </div> 
+  <span class="dropbtn">Navigation bar</span>
+  <div class="dropdown-content">
+    <a href="#lecture1">Lecture 1: Pop-ups</a>
+    <a href="#lecture6">Lecture 6: Different headers</a>
+    <a href="#lecture7">Lecture 7: Lists</a>
+    <a href="#lecture8">Lecture 8: Character entity references</a>
+    <a href="#lecture9">Lecture 9: Creating links</a>
+    <a href="#lecture10">Lecture 10: Displaying images</a>
+    <a href="#lecture13">Lectures 13 & 14: Element, class and ID selectors</a>
+    <a href="#lecture15">Lecture 15: Pseudo-class selectors</a>
+    <a href="#lecture16">Lectures 16 & 18: Style placement & styling text</a>
+    <a href="#lecture17">Lecture 17: Conflict resolution</a>
+    <a href="#lecture19">Lecture 19: The box model</a>
+    <a href="#lecture20">Lecture 20: The background property</a>
+    <a href="#lecture21">Lecture 21: Floating</a>
+    <a href="#lecture22">Lecture 22: Relative and absolute positioning</a>
+    <a href="#lecture23">Lecture 23: Media queries</a>
+    <a href="#lecture24">Lecture 24: Responsive design</a>
+    <a href="#lecture25">Lectures 25 & 26: Twitter Bootstrap</a>         
+  </div> 
   </div>
 
-<!--Back to top button-->
+<!-- Back to top button -->
  <p>
    <a id=backtotop href="#top" title="Back to top">Back to top</a>
  </p>
 
-<!--lecture1-->
- <section>
-   <div id=lecture1>Lecture 1: Pop-ups</div>
-   <div>To add an alert when you click on particular content, you have to add the onclick attribute to the tag for the contnent and then put alert, and your mesage in quotes within parentheses. Like this.<img src="alert.png" width="238" height="18" alt="Alert"></div>
-   <div onclick="alert('IT WORKS');">When you click on this sentence, an alert will appear confirming it works.</div>
- </section>
+<!-- lecture1 -->
+  <section>
+    <div id=lecture1>Lecture 1: Pop-ups</div>
+    <div>To add an alert when you click on particular content, you have to add the onclick attribute to the tag for the contnent and then put alert, and your mesage in quotes within parentheses. Like this.<img src="alert.png" width="238" height="18" alt="Alert"></div>
+    <div onclick="alert('IT WORKS');">When you click on this sentence, an alert will appear confirming it works.</div>
+  </section>
 
-<!--lecture6-->
- <section>
-   <div id=lecture6>Lecture 6: Different headers</div><!--Adjust to bootstrap columns-->
-   <div class="notes">When the h1 and h2 tag are siblings of the same tag, they are the same size.</div>
-   <h1 class="floatleft">h1</h1>
-	 <h2 class="floatleft">h2</h2>
-	 <h3 class="floatleft">h3</h3>
-	 <h4 class="floatleft">h4</h4>
-	 <h5 class="floatleft">h5</h5>
-	 <h6 class="floatleft">h6</h6>
-   <div class="clearleft"></div>
- </section>
+<!-- lecture6 (adjust to bootstrap columns) -->
+  <section>
+  <div id=lecture6>Lecture 6: Different headers</div>
+  <div class="notes">When the h1 and h2 tag are siblings of the same tag, they are the same size.</div>
+  <h1 class="floatleft">h1</h1>
+  <h2 class="floatleft">h2</h2>
+  <h3 class="floatleft">h3</h3>
+  <h4 class="floatleft">h4</h4>
+  <h5 class="floatleft">h5</h5>
+  <h6 class="floatleft">h6</h6>
+  <div class="clearleft"></div>
+  </section>
 
-<!--lecture7-->
- <section>
-   <div id=lecture7>Lecture 7: Lists</div><!--Adjust to bootstrap columns-->
-   <article class="floatleft">
-   <div>Unordered list: use the 'ul' tag.</div>
-   <div>Then each listed item is surrounded in the 'li' tag.</div>
-   <ul>
+<!-- lecture7 (adjust to bootstrap columns) -->
+  <section>
+  <div id=lecture7>Lecture 7: Lists</div>
+  <article class="floatleft">
+  <div>Unordered list: use the 'ul' tag.</div>
+  <div>Then each listed item is surrounded in the 'li' tag.</div>
+  <ul>
    	<li>Yellow</li>
-   	<li>Blue
-   		<ul>
-   		 <li>Tiffany Blue</li>
-   		 <li>Turquoise</li>
-   		</ul>
-   	</li>
-		<li>Black</li>
-  		<li>Green</li>
-   </ul>
-   </article>
-   <article class="floatleft">
-   <div>Ordered list: use the 'ol' tag.</div>
-   <div>Then each listed item is surrounded in the 'li' tag.</div>
-   <ol>	
+   	<li>Blue</li>
+   	<ul>
+      <li style="font-size: 0.9em">Tiffany Blue</li>
+      <li style="font-size: 0.9em">Turquoise</li>
+    </ul>
+    <li>Black</li>
+    <li>Green</li>
+  </ul>
+  </article>
+
+  <article class="floatleft">
+  <div>Ordered list: use the 'ol' tag.</div>
+  <div>Then each listed item is surrounded in the 'li' tag.</div>
+  <ol>	
    	<li>Switch on the computer.</li>
-   	<li>Log in.
-			<ul>
-			 <li>Enter user.</li>
-  			 <li>Enter password.</li>
- 			</ul>
-		</li>
-		<li>Open Google Chrome.</li>
-   </ol>
-   </article>
-   <div class="clearleft">You can remove the bullet points of numbers from lists by adding attributes to the tag itself, or to the stylesheet. I have done so in the navigation bar where there are links to areas of the page. It is actually a list, but because I have removed the bullet points, you can't tell the difference.
-   </div>
- </section>
+   	<li>Log in.</li>
+		<ul>
+			<li style="font-size: 0.9em">Enter user.</li>
+  		<li style="font-size: 0.9em">Enter password.</li>
+ 		</ul>
+    <li>Open Google Chrome.</li>
+  </ol>
+  </article>
+
+  <div class="clearleft">You can remove the bullet points of numbers from lists by adding attributes to the tag itself, or to the stylesheet. I have done so in the navigation bar where there are links to areas of the page. It is actually a list, but because I have removed the bullet points, you can't tell the difference.</div>
+  </section>
 
 <!--lecture8-->
   <section>
-   <div id=lecture8>Lecture 8: Character entity references</div>
-   <div class="notes"> Note: For some reason, I don't need to add a semi-colon for some entities to show, that why I have enclosed the words in brackets
-   </div>
+  <div id=lecture8>Lecture 8: Character entity references</div>
+  <div class="notes">Note: For some reason, I don't need to add a semi-colon for some entities to show, that why I have enclosed the words in brackets</div>
+  <p>There are 3 characters that should always be escaped. They are (&lt;), (&gt;) and (&amp;).</p>
 
-   <p>There are 3 characters that should always be escaped. They are (&lt;), (&gt;) and (&amp;).</p>
+  <div>To show these as text you must type in 
+  <img src="lessthan.png" width="40" height="18" alt="Less than">,
+  <img src="greaterthan.png" width="40" height="18" alt="Greater than">,
+  <img src="ampersand.png" width="43" height="18" alt="Ampersand"> respectively.</div>
+  <p>Other example of Entity References:
+  <span class="leftmargin40"><br>(&copy;): <img src="copyright.png" width="50" height="18" alt="Copyright"></span>
+  <span class="leftmargin40">(&quot;): <img src="quotes.png" width="45" height="18" alt="Quotes"></span>
+  </p>
 
-   <div>To show these as text you must type in <img src="lessthan.png" width="40" height="18" alt="Less than">, <img src="greaterthan.png" width="40" height="18" alt="Greater than">, <img src="ampersand.png" width="43" height="18" alt="Ampersand"> respectively.</div>
-
-   <p>Other example of Entity References:
-     <span class="leftmargin40"><br>(&copy;): <img src="copyright.png" width="50" height="18" alt="Copyright"><span class="leftmargin40">(&quot;): <img src="quotes.png" width="45" height="18" alt="Quotes"></span>
-     </span></p>
-
-   <div>You can also stop text wrapping when a window is made smaller by using <img src="nobreakspace.png" width="50" height="18" alt="No break space">. I've typed a long sentence so that I can show how to prevent broken words.</div>
-   <div>The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs. If you use multiple no break spaces together, it will be recognised as multiple spaces.</div>
- </section>
+  <div>You can also stop text wrapping when a window is made smaller by using
+  <img src="nobreakspace.png" width="50" height="18" alt="No break space">. I've typed a long sentence so that I can show how to prevent broken words.</div>
+  <div>The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs. If you use multiple no break spaces together, it will be recognised as multiple spaces</div>
+  </section>
 
 <!--lecture9-->
-    <section>
-        <div id=lecture9>Lecture 9: Creating links</div>
-        <div>Internal links are links to a file in the same directory as the file that is being edited. <a href="blank.html" target="_blank" title="Blank Page">Like this.</a></div>
-        <div>If you want the link to be on a different line, you can surround the text in div tags.
-        <a href="blank.html" target="_blank" title="Blank Page">
-            <div>Like this.</div>
-        </a>
-        </div>
+  <section>
+  <div id=lecture9>Lecture 9: Creating links</div>
+  <div>Internal links are links to a file in the same directory as the file that is being edited.
+  <a href="blank.html" target="_blank" title="Blank Page">Like this.</a></div>
+  <div>If you want the link to be on a different line, you can surround the text in div tags.<a href="blank.html" target="_blank" title="Blank Page">
+  <div>Like this.</div></a></div>
 
-        <p>External links are links to a file that is not in the same directory. <a href="https://git-scm.com/docs" target="_blank" title="Git References">Like this.</a></p>
+  <p>External links are links to a file that is not in the same directory.
+  <a href="https://git-scm.com/docs" target="_blank" title="Git References">Like this.</a></p>
 
-        <div>Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture. Also it should be noted that if you want a link to open in a new page or tab, you must _blank in a target attribute. <img src="target_blank.png" width="111" height="18" alt="Target blank"></div>
-    </section>
+  <div>Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture. Also it should be noted that if you want a link to open in a new page or tab, you must _blank in a target attribute. <img src="target_blank.png" width="111" height="18" alt="Target blank"></div>
+  </section>
 
 <!--lecture10-->
-    <section>
-        <div id=lecture10>Lecture 10: Displaying images</div>
-        <div>To display an image you use the 'img' tag.</div>
-        <div><img src="puppyimg.png" class="leftmargin40" width="472" height="56" alt="Image Tag example"></div>
+  <section>
+  <div id=lecture10>Lecture 10: Displaying images</div>
+  <div>To display an image you use the 'img' tag.</div>
+  <div><img src="puppyimg.png" class="leftmargin40" width="472" height="56" alt="Image Tag example"></div>
+  <p>It's an inline tag so as shown above, if you want the image on it's own line you need to contain the image in a blockline tag. I have used 'div' tags as my blockline tags. Below you will see that the text 'Here's a picture of a puppy.' are right next to the image on the same line, and this is proof of the 'img' tag being an inline one.</p>
 
-        <p>It's an inline tag so as shown above, if you want the image on it's own line you need to contain the image in a blockline tag. I have used 'div' tags as my blockline tags. Below you will see that the text 'Here's a picture of a puppy.' are right next to the image on the same line, and this is proof of the 'img' tag being an inline one.</p>
-
-        <div><img src="puppy.jpg" class="leftmargin40" width="320" height="200" alt="A puppy"> Here's a picture of a puppy.</div>
-    </section>
+  <div><img src="puppy.jpg" class="leftmargin40" width="320" height="200" alt="A puppy"> Here's a picture of a puppy.</div>
+  </section>
 
 <!--lecture13 14--> 
  <section>
@@ -350,21 +344,17 @@
 <!--lecture22-->
  <section>
     <div id=lecture22>Lecture 22: Relative and absolute positioning</div>
-    <div>Firstly you must know about 'static positioning'. This is the default positioning for all elements except html. It's basically the regular flow of a document.</div>
+    <div>Firstly you must know about 'static positioning'. This is the default positioning for all elements except html which is automatically set to 'relative'. It's basically the regular flow of a document.</div>
 
     <br><div class="underline">Relative positioning</div>
     <div>Relative positioning is when an element is positioned relative to its position in the the regular document flow. The positioning properties are top, bottom, left and right.
     It should be noted that when an element is relatively positioned, it is not taken out of the regular document flow. This means that its original position in the document is preserved. As far as other elements are concerned, the element is still in its original position.</div>
-    <div>Look at the effect of the following html:</div>
-    <!--make this two columns-->
-    </div><img src="relativepositioninghtml.png" class="leftmargin40" width="200" height="240" alt="Relative positioning html"></div>
-    <!--image of the relativepositioning-->
-    <!--NORMAL-->
-    <!--actual example of doing it with textboxes saying static and relative-->
 
-    <br><br><div class="underline">Absolute positioning</div>
+    <br><div class="underline">Absolute positioning</div>
     <div>Offsets are relative to the position of its nearest ancestor that does not have static positioning.
     As mentioned earlier, by default 'html' is the only element that has relative positioning. In absolute positioning, the element is both taken out of the visual and actual document flow. This means that unlike with relative positioning, other elements know that the element is no longer in it's original position.</div>
+
+    <br><div><a href="relativeandabsolutepositioning.html">If you click here you will be able to see actual examples of relative and absolute positioning.</a></div>
  </section>
 
 <!--lecture23-->
