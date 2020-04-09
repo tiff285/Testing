@@ -13,15 +13,51 @@
 		margin-bottom: 20px;
 	}
 
+	.title {
+		font-size: 1.1em;
+		text-decoration: underline;
+	}
+
 	.desktop {
 		border-style: solid;
 		border-color: #000000;
 		border-width: 1px;
-		width: 400px;
 		height: 300px;
+		padding: 10px;
+	}
+
+/* Styling */
+	@media (min-width: 885px) {
+		.columns2 {
+			float: left;
+			width: 49.5%;
+		}
+	
+		.columns2+.columns2 {
+			margin-left: 1%;
+		}
+	}
+	
+	.clear {
+		clear: both;
+	}
+
+	.notes {
+		text-align: right;
+		font-size: 12px;
+		color: #B3B3B3;
 	}
 
 /* Relative positioning */
-
+	.relative {
+		position: relative;
+		left: 49px;
+		top: 49px;
+	}
 	
 /* Absolute positioning */
+	.absolute {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+	}

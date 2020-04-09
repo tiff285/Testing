@@ -10,12 +10,54 @@
 </header>
 
 <body>
-	
-	<div>Relative positioning</div>
-	<div class="relative"> </div>
+	<p>
+		<div class="title">Original</div>
+		<div class="desktop">
+		Here is some sample text. 
+			<div><img src="ghost.png" width="49" height="49" align="ghost"></div>
+			Here is some more sample text.
+		</div>
+	</p>
 
-	<div>Absolute positioning</div>
-	<div class="absolute"> </div>
+	<p>
+		
+			<div class="title">Relative positioning</div>
+			<div class="desktop columns2">
+				Here is some sample text.
+				<div><img src="ghost.png" width="49" height="49" align="ghost" class="relative"></div>
+				Here is some more sample text.
+			</div>
+		<div class="columns2">
+			If you look at the position of the picture, you can see that it is 49 pixels from the left of the picture and 49 pixels from the top of the picture. It is actually connected to the bottom-right corner of where the original picture existed.
+			<br>
+			<br>
+			You should also take note of the fact that the position of the picture in the regular document flow has been maintained. It is as if the picture is still there.
+			<br>
+			<br>
+			You can also see that is has obviously been removed from the regular document flow because it is on top of the 'more sample text' that is there already.
+		</div>
+		<div class="clear"></div>
+	</p>
+
+	<p>
+			<div class="title clear">Absolute positioning</div>
+			<div class="desktop columns2" style="position: relative">
+				Here is some sample text. 
+				<div><img src="ghost.png" width="49" height="49" align="ghost" class="absolute"></div>
+				Here is some more sample text.
+			</div>
+		<div class="columns2">	
+			With absolute positioning you can see that the image is no longer holding its place in the regular document flow because the two sample texts have come together.
+			<br>
+			<br>
+			Here I made the 'desktop' relative as necessary to do absolute positioning and then set it to 0 pixels away from the bottom and the right of said desktop.
+		</div>
+		<div class="clear"></div>
+	</p>
+
+	<p class="notes">
+		See lecture 22 for more information.
+	</p>
 
 </body>
 </html>
