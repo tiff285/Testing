@@ -93,7 +93,7 @@
   <div class="clearleft">You can remove the bullet points of numbers from lists by adding attributes to the tag itself, or to the stylesheet. I have done so in the navigation bar where there are links to areas of the page. It is actually a list, but because I have removed the bullet points, you can't tell the difference.</div>
   </section>
 
-<!--lecture8-->
+<!-- lecture8 -->
   <section>
   <div id=lecture8>Lecture 8: Character entity references</div>
   <div class="notes">Note: For some reason, I don't need to add a semi-colon for some entities to show, that why I have enclosed the words in brackets</div>
@@ -102,7 +102,7 @@
   <div>To show these as text you must type in 
   <img src="lessthan.png" width="40" height="18" alt="Less than">,
   <img src="greaterthan.png" width="40" height="18" alt="Greater than">,
-  <img src="ampersand.png" width="43" height="18" alt="Ampersand"> respectively.</div>
+  <img src="ampersand.png" width="43" height="18" alt="Ampersand">respectively.</div>
   <p>Other example of Entity References:
   <span class="leftmargin40"><br>(&copy;): <img src="copyright.png" width="50" height="18" alt="Copyright"></span>
   <span class="leftmargin40">(&quot;): <img src="quotes.png" width="45" height="18" alt="Quotes"></span>
@@ -113,7 +113,7 @@
   <div>The set of unbroken words that I am going to use as an example is my full name. Tiffany&nbsp;Oluwatoyosi&nbsp;Taiwo&nbsp;Jacobs. If you use multiple no break spaces together, it will be recognised as multiple spaces</div>
   </section>
 
-<!--lecture9-->
+<!-- lecture9 -->
   <section>
   <div id=lecture9>Lecture 9: Creating links</div>
   <div>Internal links are links to a file in the same directory as the file that is being edited.
@@ -127,7 +127,7 @@
   <div>Same page links are links to an area in the same page. Examples of this are shown with the links at the top of the page to each lecture. Also it should be noted that if you want a link to open in a new page or tab, you must _blank in a target attribute. <img src="target_blank.png" width="111" height="18" alt="Target blank"></div>
   </section>
 
-<!--lecture10-->
+<!-- lecture10 -->
   <section>
   <div id=lecture10>Lecture 10: Displaying images</div>
   <div>To display an image you use the 'img' tag.</div>
@@ -137,225 +137,215 @@
   <div><img src="puppy.jpg" class="leftmargin40" width="320" height="200" alt="A puppy"> Here's a picture of a puppy.</div>
   </section>
 
-<!--lecture13 14--> 
- <section>
-    <div id=lecture13>Lectures 13 & 14: Element, class and ID selectors</div> <!-- In this section I will change it to the media queries, twitter bootstrap scale. At most 3 columns, Small will be 1 column that is wider.-->
-    <div>You can style an element by simply writing the name of the element and then write the styles you want in a pair of braces.<img src="element.png" width="45" height="18" alt="Element"></div>
+<!-- lecture13 14 --> 
+  <section>
+  <div id=lecture13>Lectures 13 & 14: Element, class and ID selectors</div> <!-- In this section I will change it to the media queries, twitter bootstrap scale. At most 3 columns, Small will be 1 column that is wider.-->
+  <div>You can style an element by simply writing the name of the element and then write the styles you want in a pair of braces.<img src="element.png" width="45" height="18" alt="Element"></div>
 
-    <p>You can style a class by writing a fullstop, the name of the class with no spaces and then write the styles you want in a pair of braces.<img src="class.png" width="50" height="18" alt="Class"></p>
+  <p>You can style a class by writing a fullstop, the name of the class with no spaces and then write the styles you want in a pair of braces.<img src="class.png" width="50" height="18" alt="Class"></p>
 
-    <div>You can style an ID by writing a pound sign, the name of the ID with no spaces and then write the styles you want in a pair of braces.<img src="ID.png" width="80" height="18" alt="ID"></div>
+  <div>You can style an ID by writing a pound sign, the name of the ID with no spaces and then write the styles you want in a pair of braces.<img src="ID.png" width="80" height="18" alt="ID"></div>
 
-    <p><div>I have shown the use of using selectors to style my webpage in the stylesheet. For example I gave made all the text on this page Trebuchet MS.</div>
-    <img src="bodyfont.png" class="leftmargin40" width="370" height="70" alt="Body font"></p>
+  <p><div>I have shown the use of using selectors to style my webpage in the stylesheet. For example I gave made all the text on this page Trebuchet MS.</div>
+  <img src="bodyfont.png" class="leftmargin40" width="370" height="70" alt="Body font"></p>
 
-    <div>You can style several selectors in the same way by separating them with commas. </div>
-    <img src="multipleselectors.png" class="leftmargin40" width="150" height="60" alt="Multiple selectors"> 
+  <div>You can style several selectors in the same way by separating them with commas. </div>
+  <img src="multipleselectors.png" class="leftmargin40" width="150" height="60" alt="Multiple selectors"> 
 
-    <p>Selectors can also be combined, they don't have to be used individually. There are 5 different ways to combine selectors that I currently know of.</p>
+  <p>Selectors can also be combined, they don't have to be used individually. There are 5 different ways to combine selectors that I currently know of.</p>
 
-    <section class=combiningselectors>
-      <span></span>
-      <div><span class="underline">Element with a class selector</span>
-        <br>To do this, you simply type in the name of the element followed by a fullstop and then name of the class without spaces in between. 
+  <section class=combiningselectors>
+  <span></span>
+  <div><span class="underline">Element with a class selector</span>
+  <br>To do this, you simply type in the name of the element followed by a fullstop and then name of the class without spaces in between. 
+  <p>An example is shown below:
+  <br><img src="elementwithclassselector.png" width="182" height="56" alt="Element with Class Selector">
+  <br>This means that every 'span' element that is classed as examples will have a 40px left margin.</p></div>
 
-        <p>An example is shown below:
-        <br><img src="elementwithclassselector.png" width="182" height="56" alt="Element with Class Selector">
-        <br>This means that every 'span' element that is classed as examples will have a 40px left margin.</p>
-      </div>
-      <div><span class="underline">Direct child selector</span>
-        <br>The direct child inside the parent will be affected. Not all descendants, just the ones that are directly inside the parent. 
-        <p>An example is shown below:
-        <br><img src="directchildselector.png" width="142" height="56" alt="Direct Child Selector">
-        <br>This means that every 'p' element that is a direct child of an article will be blue. A 'p' tag within a 'div' tag that is within an 'article' tag, will not be affected.</p>
-      </div>
-      <div><span class="underline">Descendant selector</span>
-        <br>Is the exact same as the direct child selector, except for the fact that it also includes any of the tags that are also not direct child.
-        <p>An example is shown below:
-        <br><img src="descendantselector.png" width="170" height="56" alt="Descendant Selector">
-        <br>This means that any 'p' elements that are within the 'article' element will have the font size of 24px.</p>
-      </div>
-      <div><span class="underline">Adjacent sibling selector</span>
-        <br>This is used to affect selectors that are next to each other. You use the '+' to connect selectors.
-        <p>An example is shown below:
-        <br><img src="adjacentsiblingselector.png" width="222" height="56" alt="Adjacent Sibling Selector">
-        <br>This means that any 'p' tag that directly follows a 'p' tag will have a yellow backfground. The first p itself is not affected.</p>
-      </div>
-      <div><span class="underline">General sibling selector</span>
-        <br>To do this, you use the '~' to connect selectors. This means that all the siblings within the same parent will have certain attributes.
-        <p>An example is shown below:
-        <br><img src="generalsiblingselector.png" width="232" height="62" alt="General Sibling Selector">
-        <br>This means that any 'p' elements with the same parent 'div' element will be underlined.</p>
-      </div>
-    </section>
-    <p class=clearleft>All of this can be applied to different selectors and can be mixed. It doesn't have to be with element to element only.</p>
-    I have actually combined selectors myself by using <img src="nthchild.png" width="180" height="18" alt="nth-child selector"> in my stylesheet.
-    <div>This helps me style every lecture title the way I want to because it is alwys the 1st div in every section that I have created.</div>
- </section>
+  <div><span class="underline">Direct child selector</span>
+  <br>The direct child inside the parent will be affected. Not all descendants, just the ones that are directly inside the parent. 
+  <p>An example is shown below:
+  <br><img src="directchildselector.png" width="142" height="56" alt="Direct Child Selector">
+  <br>This means that every 'p' element that is a direct child of an article will be blue. A 'p' tag within a 'div' tag that is within an 'article' tag, will not be affected.</p></div>
 
-<!--lecture15-->
- <section>
-    <div id=lecture15>Lecture 15: Pseudo-class selectors</div>
-    <div>There are also pseudo-class selectors which work based on the way the user interacts with the webpage. The pseudo-class refers to the current state of particlar content. To use one, you add a semi-colon after the selector and then the pseudo-class. Here are examples of a few:</div>
-    <div><img src="pseudoclassselector.png" class="leftmargin40" width="300" height="54" alt="Pseudo-class selector"></div>
-    <ul style="list-style-type: none;" class="noleftmargin">
-      <li><span class="html">:link</span> is a link in its natural state before it has been clicked on.</li>
-      <li><span class="html">:visited</span> is a link that has been clicked on before.</li>
-      <li><span class="html">:hover</span> is a link that is being hovered on.</li>
-      <li><span class="html">:active</span> is a link that is being clicked on.</li>
-      <li><span class="html">:nth&nbsp;-&nbsp;child(1~/odd/even)</span> is a particular child within the selector chosen. <span class="notes">(You can have any number child, or you coud put every even or odd child.)</span></li>
-    </ul>
- </section>
+  <div><span class="underline">Descendant selector</span>
+  <br>Is the exact same as the direct child selector, except for the fact that it also includes any of the tags that are also not direct child.
+  <p>An example is shown below:
+  <br><img src="descendantselector.png" width="170" height="56" alt="Descendant Selector">
+  <br>This means that any 'p' elements that are within the 'article' element will have the font size of 24px.</p></div>
 
-<!--lecture16 18-->
- <section>
-    <div id=lecture16>Lectures 16 & 18: Style placement & styling text</div>
-    <div>You can style text directly inside the necessary html, but it is more common practice to use a css stylesheet and then provide a link to it in the html. Putting styling in the head tag of the actual html being edited will override the stylesheet, but it is not good practice.</div>
-    <div><img src="linkingstylesheet.png" width="272" height="21" alt="Link to stylesheet"></div> 
+  <div><span class="underline">Adjacent sibling selector</span>
+  <br>This is used to affect selectors that are next to each other. You use the '+' to connect selectors.
+  <p>An example is shown below:
+  <br><img src="adjacentsiblingselector.png" width="222" height="56" alt="Adjacent Sibling Selector">
+  <br>This means that any 'p' tag that directly follows a 'p' tag will have a yellow backfground. The first p itself is not affected.</p></div>
 
-    <p>Remember that styling attributes work in a chronological order. So the lower it is in the html, the higher precedent it takes. (This obviously disregarding the rule of specificity.) This is why you place the link to the stylesheet inside the head area, as this means you have virtually added all your styles there.
-    </p>
+  <div><span class="underline">General sibling selector</span>
+  <br>To do this, you use the '~' to connect selectors. This means that all the siblings within the same parent will have certain attributes.
+  <p>An example is shown below:
+  <br><img src="generalsiblingselector.png" width="232" height="62" alt="General Sibling Selector">
+  <br>This means that any 'p' elements with the same parent 'div' element will be underlined.</p></div>
+  </section>
 
-    <div>There are many ways to style text. Here are few examples:</div> 
-      <div class="html doublelineheight leftmargin40">
-        <div>font-family: [font]</div>
-        <div>color: [colour]</div>
-        <div>font-style: [normal, italic, oblique, initial, inherit]</div>
-        <div>font-weight: [100~900, initial, inherit]</div>
-        <div>font-size: [*px, *%, 0.*1~em]</div>
-        <div>text-transform: [captials, lowercase, all capitals]</div>
-        <div>text-align: [center, left, right]</div>
-      </div>
+  <p class=clearleft>All of this can be applied to different selectors and can be mixed. It doesn't have to be with element to element only.</p>
 
-      <div class="container-fluid">
-        <div class="row smallerfont">
-          <div class="col-lg-6 col-md-12 col-sm-12">'font-family' - You simply put in a few font's that you would like the browser to display. You can type multiple, just incase the browser that is being used doesn't support a particular one.</div>
-          <div class="col-lg-6 col-md-12 col-sm-12">'color' - You put the color that you want. You can type the name of the color, but it is best to you the hex code.</div>
-        <!--WHAT IS THE ISSUE HERE??? WHY DOES IT NOT STACK PROPERLY-->
-          <div class="col-lg-6 col-md-12 col-sm-12">'font-style' - Type the style. 'initial' means that it will retain the default style. 'inherit' means that it will take the style of the parent tag.</div>
-          <div class="col-lg-6 col-md-12 col-sm-12">'font-weight' - 400 is the same as bold, any numbers entered that are lower or higher will be thinner and thicker respectively. You can also use 'initial' and 'inherit' here.</div>
-          <div class="col-lg-6 col-md-12 col-sm-12">'font-size' - You can use pixels, percentage or em. 'em' is the scaled number to the default font size. If you put 0.5em and the default font size is 12px, it will then become 6px.</div>
-          <div class="col-lg-6 col-md-12 col-sm-12">'text-transform' - Pretty self-explanatory.</div>
-          <div class="col-lg-6 col-md-12 col-sm-12">'text-align' - Again self-explanatory.</div>
-        </div>
-      </div>
-    <div class="clearleft"></div>
- </section>
+  I have actually combined selectors myself by using <img src="nthchild.png" width="180" height="18" alt="nth-child selector"> in my stylesheet.
+  <div>This helps me style every lecture title the way I want to because it is alwys the 1st div in every section that I have created.</div>
+  </section>
 
-<!--lecture17-->
- <section>
-    <div id=lecture17>Lecture 17: Conflict resolution</div>
-    <div>When two or more styles have been given to a particular element, class or ID, there needs to be a way to tell which style will take precedence. There are several ways to do this. The three ways that I know about are 'Origin precedence', 'Inheritance' and 'Specificity'.</div>
+<!-- lecture15 -->
+  <section>
+  <div id=lecture15>Lecture 15: Pseudo-class selectors</div>
+  <div>There are also pseudo-class selectors which work based on the way the user interacts with the webpage. The pseudo-class refers to the current state of particlar content. To use one, you add a semi-colon after the selector and then the pseudo-class. Here are examples of a few:</div>
+  <div><img src="pseudoclassselector.png" class="leftmargin40" width="300" height="54" alt="Pseudo-class selector"></div>
+  <ul style="list-style-type: none;" class="noleftmargin">
+    <li><span class="html">:link</span> a link in its natural state before it has been clicked on.</li>
+    <li><span class="html">:visited</span> a link that has been clicked on before.</li>
+    <li><span class="html">:hover</span> something being hovered on.</li>
+    <li><span class="html">:active</span> something being clicked on.</li>
+    <li><span class="html">:nth&nbsp;-&nbsp;child(1~/odd/even)</span> is a particular child within the selector chosen. <span class="notes">(You can have any number child, or you coud put every even or odd child)</span></li>
+  </ul>
+  </section>
 
-    <p>The 'Origin Precedence' is that the last declaration wins in a conflict. If there is no conflict they merge. This means that something that is placed lower will have take precedence. There is also the fact that if two styles target the same area, one is in the stylesheet and the other is in the html, the html styling will prevail.</p>
+<!-- lecture16 18 -->
+  <section>
+  <div id=lecture16>Lectures 16 & 18: Style placement & styling text</div>
+  <div>You can style text directly inside the necessary html, but it is more common practice to use a css stylesheet and then provide a link to it in the html. Putting styling in the head tag of the actual html being edited will override the stylesheet, but it is not good practice.</div>
+  <div><img src="linkingstylesheet.png" width="272" height="21" alt="Link to stylesheet"></div> 
+  <p>Remember that styling attributes work in a chronological order. So the lower it is in the html, the higher precedent it takes. (This obviously disregarding the rule of specificity.) This is why you place the link to the stylesheet inside the head area, as this means you have virtually added all your styles there.</p>
 
-    <div>'Inheritance' rule is that every child of a tag that has certain properties will also have that property.</div>
-    <div>For example in the following html below, if the div tag was styled, the span tags would have the same style because they are children of the div tag:</div>
-    <img src="inheritance.png" class="leftmargin40" width="160" height="80" alt="Inheritance rule">
+  <div>There are many ways to style text. Here are few examples:</div> 
+  <div class="html doublelineheight leftmargin40">
+    <div>font-family: [font]</div>
+    <div>color: [colour]</div>
+    <div>font-style: [normal, italic, oblique, initial, inherit]</div>
+    <div>font-weight: [100~900, initial, inherit]</div>
+    <div>font-size: [*px, *%, 0.*1~em]</div>
+    <div>text-transform: [captials, lowercase, all capitals]</div>
+    <div>text-align: [center, left, right]</div>
+  </div>
 
-    <p>The 'Specificity' rule is that the most specific selector combination will win. To work out the specificity score you used the model as pictured.
-    <br><img src="specificityscore.png" class="leftmargin40" width="400" height="120" alt="Specificity Score"></p>
+  <div class="container-fluid">
+    <div class="row smallerfont">
+      <div class="col-lg-6 col-md-12 col-sm-12">'font-family' - You simply put in a few font's that you would like the browser to display. You can type multiple, just incase the browser that is being used doesn't support a particular one.</div>
+      <div class="col-lg-6 col-md-12 col-sm-12">'color' - You put the color that you want. You can type the name of the color, but it is best to you the hex code.</div>
+      <div class="col-lg-6 col-md-12 col-sm-12">'font-style' - Type the style. 'initial' means that it will retain the default style. 'inherit' means that it will take the style of the parent tag.</div>
+      <div class="col-lg-6 col-md-12 col-sm-12">'font-weight' - 400 is the same as bold, any numbers entered that are lower or higher will be thinner and thicker respectively. You can also use 'initial' and 'inherit' here.</div>
+      <div class="col-lg-6 col-md-12 col-sm-12">'font-size' - You can use pixels, percentage or em. 'em' is the scaled number to the default font size. If you put 0.5em and the default font size is 12px, it will then become 6px.</div>
+      <div class="col-lg-6 col-md-12 col-sm-12">'text-transform' - You can use this to rotate, skew or scale any elements.</div>
+      <div class="col-lg-6 col-md-12 col-sm-12">'text-align' - Again self-explanatory.</div>
+    </div>
+  </div>
+  <div class="clearleft"></div>
+  </section>
 
-    <p>If a &nbsp;&nbsp; <span class="html">style="..."</span> &nbsp;&nbsp; is used, you place a '1' in the thousands box. If you do this any style placed directly in an element tag will win a conflict.</p>
+<!-- lecture17 -->
+  <section>
+  <div id=lecture17>Lecture 17: Conflict resolution</div>
+  <div>When two or more styles have been given to a particular element, class or ID, there needs to be a way to tell which style will take precedence. There are several ways to do this. The three ways that I know about are 'Origin precedence', 'Inheritance' and 'Specificity'.</div>
+  <p>The 'Origin Precedence' is that the last declaration wins in a conflict. If there is no conflict they merge. This means that something that is placed lower will have take precedence. There is also the fact that if two styles target the same area, one is in the stylesheet and the other is in the html, the html styling will prevail.</p>
 
-    <p>For every ID used, you must add '1' to the hundreds box.</p>
+  <div>'Inheritance' rule is that every child of a tag that has certain properties will also have that property.</div>
+  <div>For example in the following html below, if the div tag was styled, the span tags would have the same style because they are children of the div tag:</div>
+  <img src="inheritance.png" class="leftmargin40" width="160" height="80" alt="Inheritance rule">
 
-    <p>For every class, pseudo-class or attribute used you add '1' to the tens box.</p>
+  <p>The 'Specificity' rule is that the most specific selector combination will win. To work out the specificity score you used the model as pictured.
+  <br><img src="specificityscore.png" class="leftmargin40" width="400" height="120" alt="Specificity Score"></p>
 
-    <div>For every element used, you add a '1' in the ones box.</div>
-    <span class="notes">Note: The highest specificity score is 1000.</span>
-    <div class="morenotes">To override everything you can use &nbsp;&nbsp; !important &nbsp;&nbsp; but it is ill-advised.</div>
- </section>
+  <p>If a &nbsp;&nbsp; <span class="html">style="..."</span> &nbsp;&nbsp; is used, you place a '1' in the thousands box. If you do this any style placed directly in an element tag will win a conflict.</p>
 
-<!--lecture19-->
- <section>
-    <div id=lecture19>Lecture 19: The box model</div><!--Use bootstrap to make 2 columns (text column bigger than image)/1 column-->
-    <div>
-      <div>Content: The actual thing that is within the tags. Can be text, a link or an image.</div>
+  <p>For every ID used, you must add '1' to the hundreds box.</p>
 
-      <p>Padding: You can add padding to the top, right, bottom and left of the content. It is between the content and the border.</p>
+  <p>For every class, pseudo-class or attribute used you add '1' to the tens box.</p>
 
-      <p>Border: Between the padding and the margin.</p>
+  <div>For every element used, you add a '1' in the ones box.</div>
+  <span class="notes">Note: The highest specificity score is 1000.</span>
+  <div class="morenotes">To override everything you can use &nbsp;&nbsp; !important &nbsp;&nbsp; but it is ill-advised.</div>
+  </section>
 
-      <p>Margin: Automatically set by the browser if there is no style added. When margins are side-by-side, they are cumulative. However, when they are top-to-bottom the margins collapse and the largest one wins.</p>
+<!-- lecture19 -->
+  <section>
+  <div id=lecture19>Lecture 19: The box model</div>
+  <p>Content: The actual thing that is within the tags. Can be text, a link or an image.</p>
+  <p>Padding: You can add padding to the top, right, bottom and left of the content. It is between the content and the border.</p>
+  <p>Border: Between the padding and the margin.</p>
+  <p>Margin: Automatically set by the browser if there is no style added. When margins are side-by-side, they are cumulative. However, when they are top-to-bottom the margins collapse and the largest one wins.</p>
+  <p>Height and Width: pretty self-explanatory except for the fact that when the box-sizing is set to border box, it accounts for the whole box of the element and not the height and width of the content which is the default setting.</p>
 
-      <p>Height and Width: pretty self-explanatory except for the fact that when the box-sizing is set to border box, it accounts for the whole box of the element and not the height and width of the content which is the default setting.</p>
-
-      <div>To change the box-sizing to border box you do this:</div>
-        <div class="html leftmargin40">box-sizing: border-box;</div>
+  <div>To change the box-sizing to border box you do this:</div>
+  <div class="html leftmargin40">box-sizing: border-box;</div>
       
-      <br><div>Overflow: when the box-sizing is set to border-box, a width and a height has also been set, and your content is spilling out of its box, you can use the different styling options to alter its appearance. To change the overflow you type the following html.</div>
-      <div class="html leftmargin40">overflow: [visible, hidding, auto, scroll]</div>
-      <div class="notes">Note: 'auto' creates a scroll bar when necessary and is usually used for Terms of Service.
-      scroll; always shows a scroll bar.</div>
-    </div>
-    <div>
-        <img src="boxmodel.png" class="leftmargin40" width="425" height="293" alt="Box model">
-    </div>
- </section>
+  <br><div>Overflow: when the box-sizing is set to border-box, a width and a height has also been set, and your content is spilling out of its box, you can use the different styling options to alter its appearance. To change the overflow you type the following html.</div>
+  <div class="html leftmargin40">overflow: [visible, hidding, auto, scroll]</div>
+  <div class="notes">Note: 'auto' creates a scroll bar when necessary and is usually used for Terms of Service.</div>
+  <div class="morenotes">scroll; always shows a scroll bar.</div>
 
-<!--lecture20-->
- <section>
-    <div id=lecture20>Lecture 20: The background property</div>
-    You can use a background image by using:
-    <div class="html leftmargin40">background-image: url('image.jpg')</div>
-    To edit whether or how it repeats you use:
-    <div class="html leftmargin40">background-repeat: [inherit, no-repeat, repeat;, repeat-x, repeat-y, space, round]</div>
-    <!--Notes--><div class="notes">Note: 'repeat-x' repeats horizontally and 'repeat-y' repeats vertically.</div>
-    <div class="morenotes">'space' repeats evenly spaced out and 'round' repeats evenly with no space.</div>
-    <br><div>You can also choose the position of said imagine by using:</div>
-    <div class="html leftmargin40">background-position: [top, right, bottom, left]</div>
-    <br>All these background properties can be specified under just <span class="html">&nbsp;&nbsp;background: [...]</span>,&nbsp;&nbsp; but doing so will make the priority work in a consequential fashion. This means that if you have an image and a color, the later mentioned on will override all previous properties unless it's respecified in <span class="html">background: [...]</span>.
-    <p>Below are examples of each background property style that you can have. They are in the following order 'no-repeat', 'repeat, 'repeat-x', 'repeat-y', 'space' and 'round'.</p>
-    
-    <div class="container-fluid">
-        <div class="row">
-          <div class="background1 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">no-repeat</span></div>
-          <div class="background2 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">repeat</span></div>
-          <div class="background3 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">repeat-x</span></div>
-          <div class="background4 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">repeat-y</span></div>
-          <div class="background5 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">space</span></div>
-          <div class="background6 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">round</span></div>
-          <div class="clearleft"></div>
-        </div>
-    </div>
- </section>
+  <div>
+  <img src="boxmodel.png" class="leftmargin40" width="425" height="293" alt="Box model"></div>
+  </section>
 
-<!--lecture21-->
- <section>
-    <div id=lecture21>Lecture 21: Floating</div>
-    <div>You can creat multi-column designs using floating. When you float an element, it means that you are taking it out of the regular flow.</div>
-    <ul>
-      <li>It should be noted that margins typically collapse when they are top-to-bottom, but when elements have been floated, their margins do not collapse. </li>
-      <li>To stop an item floating on top of other elements you use <span class="html">clear: [left, right, both]</span>.</li>
-      <li>To make columns, you must set the width for each section as a percentage. When doing this you must remember to set the box-sizing to border box, if not, your content will spill out of it's box.</li>
-    </ul>
-
-    <div>An example of me floating is shown below:</div>
-    <div class="leftmargin40">
-      <div class="lecture21floating"> </div>
-      <div class="lecture21floating"> </div>
-      <div class="lecture21floating"> </div>
-      <div class="lecture21floating"> </div>
+<!-- lecture20 -->
+  <section>
+  <div id=lecture20>Lecture 20: The background property</div>
+  You can use a background image by using:
+  <div class="html leftmargin40">background-image: url('image.jpg')</div>
+  To edit whether or how it repeats you use:
+  <div class="html leftmargin40">background-repeat: [inherit, no-repeat, repeat;, repeat-x, repeat-y, space, round]</div>
+  <!--Notes--><div class="notes">Note: 'repeat-x' repeats horizontally and 'repeat-y' repeats vertically.</div>
+  <div class="morenotes">'space' repeats evenly spaced out and 'round' repeats evenly with no space.</div>
+  
+  <br><div>You can also choose the position of said imagine by using:</div>
+  <div class="html leftmargin40">background-position: [top, right, bottom, left]</div>
+  
+  <br>All these background properties can be specified under just <span class="html">&nbsp;&nbsp;background: [...]</span>,&nbsp;&nbsp; but doing so will make the priority work in a consequential fashion. This means that if you have an image and a color, the later mentioned on will override all previous properties unless it's respecified in <span class="html">background: [...]</span>.
+  <p>Below are examples of each background property style that you can have. They are in the following order 'no-repeat', 'repeat, 'repeat-x', 'repeat-y', 'space' and 'round'.</p>
+   
+  <div class="container-fluid">
+    <div class="row">
+      <div class="background1 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">no-repeat</span></div>
+      <div class="background2 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">repeat</span></div>
+      <div class="background3 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">repeat-x</span></div>
+      <div class="background4 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">repeat-y</span></div>
+      <div class="background5 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">space</span></div>
+      <div class="background6 col-lg-2 col-md-4 col-sm-6"><span class="backgroundstyle">round</span></div>
       <div class="clearleft"></div>
     </div>
- </section>
+  </div>
+  </section>
+
+<!-- lecture21 -->
+  <section>
+  <div id=lecture21>Lecture 21: Floating</div>
+  <div>You can creat multi-column designs using floating. When you float an element, it means that you are taking it out of the regular flow.</div>
+  <ul>
+    <li>It should be noted that margins typically collapse when they are top-to-bottom, but when elements have been floated, their margins do not collapse. </li>
+    <li>To stop an item floating on top of other elements you use <span class="html">clear: [left, right, both]</span>.</li>
+    <li>To make columns, you must set the width for each section as a percentage. When doing this you must remember to set the box-sizing to border box, if not, your content will spill out of it's box.</li>
+  </ul>
+
+  <div>An example of me floating is shown below:</div>
+  <div class="lecture21floating leftmargin40"> </div>
+  <div class="lecture21floating"> </div>
+  <div class="lecture21floating"> </div>
+  <div class="lecture21floating"> </div>
+  <div class="clearleft"></div>
+  </section>
 
 <!--lecture22-->
- <section>
-    <div id=lecture22>Lecture 22: Relative and absolute positioning</div>
-    <div>Firstly you must know about 'static positioning'. This is the default positioning for all elements except html which is automatically set to 'relative'. It's basically the regular flow of a document.</div>
+  <section>
+  <div id=lecture22>Lecture 22: Relative and absolute positioning</div>
+  <div>Firstly you must know about 'static positioning'. This is the default positioning for all elements except html which is automatically set to 'relative'. It's basically the regular flow of a document.</div>
 
-    <br><div class="underline">Relative positioning</div>
-    <div>Relative positioning is when an element is positioned relative to its position in the the regular document flow. The positioning properties are top, bottom, left and right.
-    It should be noted that when an element is relatively positioned, it is not taken out of the regular document flow. This means that its original position in the document is preserved. As far as other elements are concerned, the element is still in its original position.</div>
+  <br><div class="underline">Relative positioning</div>
+  <div>Relative positioning is when an element is positioned relative to its position in the the regular document flow. The positioning properties are top, bottom, left and right.
+  It should be noted that when an element is relatively positioned, it is not taken out of the regular document flow. This means that its original position in the document is preserved. As far as other elements are concerned, the element is still in its original position.</div>
 
-    <br><div class="underline">Absolute positioning</div>
-    <div>Offsets are relative to the position of its nearest ancestor that does not have static positioning.
-    As mentioned earlier, by default 'html' is the only element that has relative positioning. In absolute positioning, the element is both taken out of the visual and actual document flow. This means that unlike with relative positioning, other elements know that the element is no longer in it's original position.</div>
+  <br><div class="underline">Absolute positioning</div>
+  <div>Offsets are relative to the position of its nearest ancestor that does not have static positioning.
+  As mentioned earlier, by default 'html' is the only element that has relative positioning. In absolute positioning, the element is both taken out of the visual and actual document flow. This means that unlike with relative positioning, other elements know that the element is no longer in it's original position.</div>
 
-    <br><div><a href="relativeandabsolutepositioning.html">If you click here you will be able to see actual examples of relative and absolute positioning.</a></div>
- </section>
+  <br><div><a href="relativeandabsolutepositioning.html" target="_blank">If you click here you will be able to see actual examples of relative and absolute positioning.</a></div>
+  </section>
 
 <!--lecture23-->
  <section>
